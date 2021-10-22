@@ -1,0 +1,409 @@
+1
+
+00:00:00,570  -->  00:00:02,050
+Hello there you beautiful people.
+
+2
+
+00:00:02,070  -->  00:00:08,010
+So this is just another quick video about some of the some useful tricks you can do when you're dealing
+
+3
+
+00:00:08,010  -->  00:00:09,140
+with slices.
+
+4
+
+00:00:09,150  -->  00:00:15,360
+The first thing I want to show you is you don't have to count from the very beginning in order to get
+
+5
+
+00:00:15,360  -->  00:00:16,650
+up to where you want to go.
+
+6
+
+00:00:16,980  -->  00:00:20,380
+So you can actually count from this end.
+
+7
+
+00:00:20,520  -->  00:00:22,510
+So let's say I wanted you.
+
+8
+
+00:00:22,770  -->  00:00:23,260
+Okay.
+
+9
+
+00:00:23,310  -->  00:00:28,160
+I could count up 0 1 2 3 4 5 all the way up until you right.
+
+10
+
+00:00:28,230  -->  00:00:32,400
+Or I could do word and count back from the other end.
+
+11
+
+00:00:32,430  -->  00:00:37,330
+So this value here is actually index minus one.
+
+12
+
+00:00:37,620  -->  00:00:40,750
+So you would be index minus two.
+
+13
+
+00:00:40,950  -->  00:00:41,440
+Okay.
+
+14
+
+00:00:41,550  -->  00:00:47,010
+And they see we get you less safe we wanted this see they'll be minus one minus two minus three minus
+
+15
+
+00:00:47,010  -->  00:00:52,230
+four minus five word minus five should give us C..
+
+16
+
+00:00:52,280  -->  00:00:53,190
+And it does.
+
+17
+
+00:00:53,220  -->  00:00:54,420
+So this is a nice short cut.
+
+18
+
+00:00:54,420  -->  00:01:00,570
+You don't have to count all the way from from this and you can can from this and remembering that the
+
+19
+
+00:01:00,570  -->  00:01:02,450
+very end value is minus one.
+
+20
+
+00:01:02,460  -->  00:01:07,130
+So if you want the very end value you just type minus one and it's going to give us s at the end.
+
+21
+
+00:01:07,470  -->  00:01:15,300
+But this doesn't solve the actual issue which is that we're still counting right in our head as a human
+
+22
+
+00:01:15,300  -->  00:01:17,130
+being which can make mistakes.
+
+23
+
+00:01:17,220  -->  00:01:23,490
+What we want to do is to leverage the power of the computer to do all the counting for us and for that
+
+24
+
+00:01:23,490  -->  00:01:25,860
+we're going to use the index function.
+
+25
+
+00:01:26,040  -->  00:01:33,930
+So let's say for example I wanted to just take the word calleigh out what I could do is I could type
+
+26
+
+00:01:33,930  -->  00:01:35,510
+a word.
+
+27
+
+00:01:35,850  -->  00:01:44,860
+And I want where calleigh starts so I could type in here word dot index of callee.
+
+28
+
+00:01:45,160  -->  00:01:45,630
+Okay.
+
+29
+
+00:01:45,750  -->  00:01:48,450
+Because where starts.
+
+30
+
+00:01:48,460  -->  00:01:51,490
+Let me just show you actually I mean just make it a bit simpler.
+
+31
+
+00:01:51,690  -->  00:02:00,870
+Index sorry word dot index of calleigh is going to give us five because cow he starts at index five
+
+32
+
+00:02:00,870  -->  00:02:05,070
+right 0 1 2 3 4 5 so what.
+
+33
+
+00:02:05,070  -->  00:02:09,630
+And we want to go all the way up to fragile.
+
+34
+
+00:02:10,050  -->  00:02:10,530
+Right.
+
+35
+
+00:02:10,650  -->  00:02:15,080
+So fragile starts at index word dot index.
+
+36
+
+00:02:15,360  -->  00:02:16,920
+Fragile is going to give us 9.
+
+37
+
+00:02:17,190  -->  00:02:22,500
+So what I could do is to have a word then the first where I want to start at the index of where calleigh
+
+38
+
+00:02:22,500  -->  00:02:30,750
+starts and I want to go up to where fragile starts in steps of one by default.
+
+39
+
+00:02:30,930  -->  00:02:35,580
+And it's going to give me out callee because it's going to go from where he starts to where the next
+
+40
+
+00:02:35,850  -->  00:02:38,920
+to where raji stars and that he's going to pull that out.
+
+41
+
+00:02:39,150  -->  00:02:43,910
+So using indexes using the index function is a massive shocker right.
+
+42
+
+00:02:43,920  -->  00:02:47,350
+I mean it makes life so much easier to do it that way.
+
+43
+
+00:02:47,490  -->  00:02:51,150
+Let's say if we wanted to take out the word doescher.
+
+44
+
+00:02:51,550  -->  00:02:53,550
+Okay let's say want to take this out.
+
+45
+
+00:02:53,980  -->  00:03:03,970
+All we've got to do is do word of word dot index doescher which is where it starts.
+
+46
+
+00:03:04,350  -->  00:03:04,840
+Right.
+
+47
+
+00:03:05,130  -->  00:03:09,170
+And I want to go from there to the end just to put a coal on.
+
+48
+
+00:03:09,180  -->  00:03:14,020
+It's going to seem odd to go to the end and pull it out which is fantastic.
+
+49
+
+00:03:14,130  -->  00:03:25,770
+If I wanted to get out fragile stick around so I just do word of word dark index gradualist stick all
+
+50
+
+00:03:25,770  -->  00:03:28,850
+the way up to where I mean to be honest with you.
+
+51
+
+00:03:28,890  -->  00:03:38,160
+I could just do XP right word dot index XP fragileness because I could I could just write XP and oceans
+
+52
+
+00:03:38,160  -->  00:03:39,600
+are Uecker straight XP.
+
+53
+
+00:03:40,050  -->  00:03:51,390
+Now one thing you do have to bear in mind is that index only returns the first instance of that phrase
+
+54
+
+00:03:51,390  -->  00:03:52,790
+that you're searching for.
+
+55
+
+00:03:52,800  -->  00:03:56,710
+So if I if I wanted to get fragileness to go again.
+
+56
+
+00:03:56,890  -->  00:04:03,310
+Okay let's say I went like this and I wanted to go up to word dot index of E.
+
+57
+
+00:04:03,510  -->  00:04:04,910
+I don't think that will work.
+
+58
+
+00:04:04,950  -->  00:04:05,760
+It won't work right.
+
+59
+
+00:04:05,760  -->  00:04:07,150
+It obviously was an empty string.
+
+60
+
+00:04:07,290  -->  00:04:13,710
+And the reason is because index the index of E it finds the first E which is over here.
+
+61
+
+00:04:13,800  -->  00:04:15,100
+Not this one.
+
+62
+
+00:04:15,690  -->  00:04:23,760
+So if you wanted this one you need to say where you know something longer starts XP or XP and oceanus
+
+63
+
+00:04:23,760  -->  00:04:25,710
+or something that lets another.
+
+64
+
+00:04:25,710  -->  00:04:31,580
+You definitely want this one rather than the first day which is what causes this error here.
+
+65
+
+00:04:31,620  -->  00:04:35,820
+So that's something to bear in mind also.
+
+66
+
+00:04:35,970  -->  00:04:39,670
+So that's pretty much all there is to slicing to be fair pretty easy right.
+
+67
+
+00:04:39,900  -->  00:04:43,860
+So I just have a quick recap of what we've learned in the past two videos just to make sure we've got
+
+68
+
+00:04:43,890  -->  00:04:46,640
+everything down before we head into the slicer project.
+
+69
+
+00:04:46,920  -->  00:04:52,950
+So we learned that strings are an Iterable immutable datatype and the fact that they are Iterable means
+
+70
+
+00:04:52,950  -->  00:04:56,670
+that you can access individual elements from the string.
+
+71
+
+00:04:56,880  -->  00:05:03,750
+Each element is given its own index and these start from the number zero and you use that index to access
+
+72
+
+00:05:03,750  -->  00:05:04,890
+the element.
+
+73
+
+00:05:04,890  -->  00:05:10,080
+You also learn how to take slices from a string and how to take individual elements out yourself and
+
+74
+
+00:05:10,110  -->  00:05:13,440
+a short cut for use in the index for by using the index function.
+
+75
+
+00:05:13,470  -->  00:05:16,920
+They can take a lot of the hard work of doing this out for us.
+
+76
+
+00:05:17,250  -->  00:05:21,830
+Overall you've got a pretty good understanding of what slices are and how to create them by now.
+
+77
+
+00:05:21,840  -->  00:05:26,850
+So up next we've got a quick quiz and coding challenge to check that you fully understood what slices
+
+78
+
+00:05:26,850  -->  00:05:27,210
+are.
+
+79
+
+00:05:27,300  -->  00:05:29,240
+And after that we're going to build our e-mail slicer.
+
+80
+
+00:05:29,400  -->  00:05:33,380
+So good luck in the quiz and the coding challenge which you're going to need in order to get some practice
+
+81
+
+00:05:33,380  -->  00:05:33,420
+.
+
+82
+
+00:05:33,430  -->  00:05:36,200
+Make sure you got it down and then I'll see you in the next video.

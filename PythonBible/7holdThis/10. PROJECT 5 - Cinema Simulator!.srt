@@ -1,0 +1,1184 @@
+1
+
+00:00:00,450  -->  00:00:02,050
+Hello there you beautiful people.
+
+2
+
+00:00:02,070  -->  00:00:08,250
+No it's time to put added data structure skills to the test by making a cinema simulator.
+
+3
+
+00:00:08,250  -->  00:00:13,440
+So this project is going to let users choose from a range of films and the user will pick a film and
+
+4
+
+00:00:13,440  -->  00:00:15,870
+then the program will ask them for their age.
+
+5
+
+00:00:16,080  -->  00:00:20,340
+If they're old enough to watch the film and there are enough seats available then the program will let
+
+6
+
+00:00:20,340  -->  00:00:22,030
+them use a book to see the film.
+
+7
+
+00:00:22,110  -->  00:00:25,980
+If not the program will tell them that they're too young or there's nine of seats available or whenever
+
+8
+
+00:00:25,980  -->  00:00:26,330
+.
+
+9
+
+00:00:26,340  -->  00:00:28,950
+So pretty cool right now by the end of this project.
+
+10
+
+00:00:28,950  -->  00:00:34,500
+You should have a great understanding of how variables logic and data structures all tied together to
+
+11
+
+00:00:34,500  -->  00:00:35,350
+build programs.
+
+12
+
+00:00:35,400  -->  00:00:37,230
+So I can't wait to get started.
+
+13
+
+00:00:37,230  -->  00:00:39,920
+Let's jump right in.
+
+14
+
+00:00:39,930  -->  00:00:44,700
+So first of all as I'm sure you know first thing we're going to do is create a new script.
+
+15
+
+00:00:44,890  -->  00:00:49,690
+We're going to save that on the desktop Python Bible cinema doppie.
+
+16
+
+00:00:49,710  -->  00:00:51,930
+Why save that.
+
+17
+
+00:00:51,930  -->  00:00:52,780
+Maximize it.
+
+18
+
+00:00:52,920  -->  00:00:54,660
+And we're all good to go.
+
+19
+
+00:00:55,260  -->  00:00:55,530
+Right.
+
+20
+
+00:00:55,530  -->  00:01:02,040
+So first we're going to create some kind of data structure to store information about our films.
+
+21
+
+00:01:02,040  -->  00:01:03,800
+Now I'm going to use a dictionary for this.
+
+22
+
+00:01:03,840  -->  00:01:07,820
+As each film is going to be its own key and have its own data.
+
+23
+
+00:01:08,070  -->  00:01:15,720
+So since this current video is being filmed in about the middle of 2016 I'm just going to make you a
+
+24
+
+00:01:15,720  -->  00:01:19,710
+list of some of the current films with random ages and seat numbers.
+
+25
+
+00:01:19,710  -->  00:01:23,250
+But feel free to create your own dictionary with any films that you want.
+
+26
+
+00:01:23,550  -->  00:01:29,350
+So the dictionary is going to store the age rating for the film and also the number of seats left.
+
+27
+
+00:01:29,490  -->  00:01:34,310
+Let's make a dictionary called films and I'm going to create it like LA.
+
+28
+
+00:01:34,660  -->  00:01:42,560
+Okay now inside here I'm going to put Finding Dory 3.
+
+29
+
+00:01:43,380  -->  00:01:49,800
+So they have the the the age for this I'm going to say is three and there are five tickets.
+
+30
+
+00:01:49,890  -->  00:01:53,320
+Let's say so and then you go have born.
+
+31
+
+00:01:54,600  -->  00:01:55,890
+Pretty sure he's in the cinema.
+
+32
+
+00:01:56,160  -->  00:01:59,830
+Eighteen and five.
+
+33
+
+00:02:00,000  -->  00:02:00,780
+Tarzan
+
+34
+
+00:02:07,070  -->  00:02:10,740
+Ghostbusters.
+
+35
+
+00:02:13,050  -->  00:02:17,210
+Okay so let's put that in there 12 and 5.
+
+36
+
+00:02:17,370  -->  00:02:18,480
+Okay so there we go.
+
+37
+
+00:02:18,510  -->  00:02:20,770
+We've got our dictionary of films.
+
+38
+
+00:02:20,790  -->  00:02:24,730
+Obviously you can add as many as you want and mix and match for what you desire.
+
+39
+
+00:02:24,820  -->  00:02:26,440
+Girl leave it with those few.
+
+40
+
+00:02:26,640  -->  00:02:30,360
+So I'm going to do a little cheat again now and I'm going use a while loop.
+
+41
+
+00:02:30,360  -->  00:02:33,810
+So this program is going to run over and over again just like we did for Travis.
+
+42
+
+00:02:33,960  -->  00:02:38,040
+But don't worry we're going to cover loops in detail in the next section shula's Bear with me for now
+
+43
+
+00:02:38,070  -->  00:02:38,160
+.
+
+44
+
+00:02:38,210  -->  00:02:40,350
+Just going to type while True.
+
+45
+
+00:02:40,410  -->  00:02:43,350
+And now put our code inside here okay.
+
+46
+
+00:02:43,650  -->  00:02:47,720
+So now we need to ask the user what film they want to watch.
+
+47
+
+00:02:47,910  -->  00:02:49,220
+So there's a micro challenge.
+
+48
+
+00:02:49,290  -->  00:02:55,200
+Go ahead and ask the user what film they want to watch using the input function and store that choice
+
+49
+
+00:02:55,290  -->  00:02:58,100
+in a variable called choice.
+
+50
+
+00:02:58,200  -->  00:02:59,110
+You know the drill.
+
+51
+
+00:02:59,130  -->  00:03:05,060
+Pause the video have a go and come back to see how you did.
+
+52
+
+00:03:05,130  -->  00:03:06,590
+So how did you get on.
+
+53
+
+00:03:06,600  -->  00:03:12,500
+I'd have done it like this and it's done in here type choice equals input.
+
+54
+
+00:03:12,570  -->  00:03:20,530
+What film would you like to watch that and just in case the enter some white space.
+
+55
+
+00:03:20,550  -->  00:03:23,390
+I'm just going to strip it off right there.
+
+56
+
+00:03:23,910  -->  00:03:32,580
+And also actually because as you can see every single one of the films that I've put here in a key every
+
+57
+
+00:03:32,580  -->  00:03:35,660
+word starts with a capital letter.
+
+58
+
+00:03:35,910  -->  00:03:36,410
+Right.
+
+59
+
+00:03:36,630  -->  00:03:43,050
+So what I'm going to do is I'm going to use the title string method as well to convert whatever they
+
+60
+
+00:03:43,050  -->  00:03:49,830
+put into title case so there every If they enter Ghostbusters then Ghost will start with a capital G
+
+61
+
+00:03:49,830  -->  00:03:54,320
+and bust as we start with capital B regardless of how you know they might type it themselves.
+
+62
+
+00:03:54,330  -->  00:03:56,000
+So what is going to do that right there.
+
+63
+
+00:03:56,280  -->  00:04:00,990
+Now if you follow along with this and if you got back early or you've just been following along then
+
+64
+
+00:04:00,990  -->  00:04:06,420
+you're doing absolutely brilliantly because now we're going to start kicking off to more hard core things
+
+65
+
+00:04:06,450  -->  00:04:08,400
+.
+
+66
+
+00:04:10,080  -->  00:04:16,020
+Okay so now we need to check if the film that the user has chosen in choice is in the list of films
+
+67
+
+00:04:16,020  -->  00:04:16,590
+.
+
+68
+
+00:04:16,590  -->  00:04:19,920
+Now this is very easy to do just by using the in keyword right.
+
+69
+
+00:04:19,920  -->  00:04:25,360
+So if let's just check if choice in films.
+
+70
+
+00:04:25,800  -->  00:04:33,060
+Now actually I'm just going to introduce you to the pass Keyword the passkey word basically just tells
+
+71
+
+00:04:33,060  -->  00:04:33,850
+python.
+
+72
+
+00:04:34,050  -->  00:04:35,150
+Just move on.
+
+73
+
+00:04:35,310  -->  00:04:35,550
+OK.
+
+74
+
+00:04:35,580  -->  00:04:37,120
+This is just a blank place holder.
+
+75
+
+00:04:37,110  -->  00:04:39,290
+We're not going to actually write the code in here yet.
+
+76
+
+00:04:39,360  -->  00:04:41,730
+I'm just building the the structure.
+
+77
+
+00:04:41,910  -->  00:04:51,520
+So if the choice is in there just pass and do nothing or otherwise print we don't have that film.
+
+78
+
+00:04:52,870  -->  00:04:55,170
+And I'm going to make it build suspense.
+
+79
+
+00:04:55,750  -->  00:04:59,750
+So much should be pretty good like that.
+
+80
+
+00:05:00,130  -->  00:05:06,400
+Now when we run it like we run it I'm going to say Tarzan is not going to do anything.
+
+81
+
+00:05:06,400  -->  00:05:11,630
+Rochas are in it found the film but it just saw pass and went back around the loop.
+
+82
+
+00:05:11,620  -->  00:05:18,530
+Now if we run it again and say Rocky 7 and so then we don't have that film.
+
+83
+
+00:05:18,560  -->  00:05:21,970
+So our logic is working which is brilliant.
+
+84
+
+00:05:23,100  -->  00:05:24,960
+Okay so let's stop this thing running.
+
+85
+
+00:05:25,030  -->  00:05:33,250
+The next thing we've got to do is we've got to check whether the user is old enough to watch the film
+
+86
+
+00:05:33,250  -->  00:05:33,690
+.
+
+87
+
+00:05:33,700  -->  00:05:39,560
+So what I can do is if the choice is in the films room if the choices they're winning to check whether
+
+88
+
+00:05:39,560  -->  00:05:42,810
+the use is old enough of say age equals input.
+
+89
+
+00:05:42,920  -->  00:05:45,700
+How old are you.
+
+90
+
+00:05:46,450  -->  00:05:46,980
+Okay.
+
+91
+
+00:05:47,190  -->  00:05:50,410
+And I'm going to strip whatever comes off from that.
+
+92
+
+00:05:51,070  -->  00:05:57,020
+So how can we take whatever they put out and compare it with the age that's in here.
+
+93
+
+00:05:57,190  -->  00:06:04,620
+Well first of all we actually need to make sure that age is a number never you remember.
+
+94
+
+00:06:05,080  -->  00:06:11,300
+When I was talking over the input function it always brings in a string.
+
+95
+
+00:06:11,410  -->  00:06:14,800
+Okay it even if you type a number it saves it as a string.
+
+96
+
+00:06:14,810  -->  00:06:21,790
+So to convert all of this into an integer we to actually cast it from a string into an integer.
+
+97
+
+00:06:21,800  -->  00:06:28,550
+So here we get a string we strip any white space off it and then we convert that whole thing into an
+
+98
+
+00:06:28,550  -->  00:06:34,360
+integer indoor into a number and save that in the age now.
+
+99
+
+00:06:34,530  -->  00:06:44,240
+Now what we need to check is if that age is greater than or equal to the age requirement for the film
+
+100
+
+00:06:44,250  -->  00:06:44,460
+.
+
+101
+
+00:06:44,650  -->  00:06:45,770
+So how do we know that.
+
+102
+
+00:06:45,980  -->  00:06:50,460
+Well we go in the film's dictionary look up the film that they chose.
+
+103
+
+00:06:50,560  -->  00:06:58,300
+So let's say they entered Tarzan wrote this this if we look up the key of Tarzan it's going to give
+
+104
+
+00:06:58,310  -->  00:07:00,310
+us back this list.
+
+105
+
+00:07:00,310  -->  00:07:03,320
+Now the age is the first element in that list.
+
+106
+
+00:07:03,350  -->  00:07:06,020
+So I'm going to type in index zero.
+
+107
+
+00:07:06,070  -->  00:07:10,280
+So we're looking up the choice as a key in the films.
+
+108
+
+00:07:10,340  -->  00:07:15,280
+Now you know it makes sense why we had to get it in Title Case and we had to strip everything off and
+
+109
+
+00:07:15,280  -->  00:07:22,840
+once we've got the value which will be this this list we're going to look up the first element in it
+
+110
+
+00:07:22,940  -->  00:07:29,420
+which corresponds to the age and if their age is greater than or equal to that then we're going to print
+
+111
+
+00:07:29,410  -->  00:07:31,960
+.
+
+112
+
+00:07:31,970  -->  00:07:33,960
+Enjoy the film.
+
+113
+
+00:07:34,340  -->  00:07:34,870
+OK.
+
+114
+
+00:07:35,090  -->  00:07:36,670
+We'll come onto tickets and a little bit.
+
+115
+
+00:07:36,880  -->  00:07:40,690
+But otherwise if they're not old enough we'll get a print.
+
+116
+
+00:07:41,290  -->  00:07:45,940
+You are too young to see that film.
+
+117
+
+00:07:46,610  -->  00:07:49,450
+Okay so let's have a look.
+
+118
+
+00:07:50,260  -->  00:07:53,450
+Let's have a look at how that works.
+
+119
+
+00:07:53,480  -->  00:07:54,950
+So what film would you like to watch.
+
+120
+
+00:07:54,950  -->  00:07:56,410
+So say we want to watch Tarzan.
+
+121
+
+00:07:56,440  -->  00:07:56,970
+How old are you.
+
+122
+
+00:07:56,990  -->  00:07:59,400
+Let's say I'm 5 year old.
+
+123
+
+00:07:59,440  -->  00:08:00,930
+You're too young to see that film.
+
+124
+
+00:08:01,090  -->  00:08:07,450
+Okay so let's say if we won or what Tarzan again let's say now I'm ninety nine.
+
+125
+
+00:08:07,450  -->  00:08:10,570
+Enjoy the film right so that works absolutely fine right there.
+
+126
+
+00:08:10,560  -->  00:08:11,790
+So take another example.
+
+127
+
+00:08:12,010  -->  00:08:17,450
+Let's say if we want to watch Finding Dory.
+
+128
+
+00:08:17,620  -->  00:08:18,430
+How old are you.
+
+129
+
+00:08:18,440  -->  00:08:20,770
+I want I am say nine years old.
+
+130
+
+00:08:20,770  -->  00:08:21,380
+Enjoy the film.
+
+131
+
+00:08:21,380  -->  00:08:22,500
+That works fine as well.
+
+132
+
+00:08:22,730  -->  00:08:27,730
+So let's cancel that out and depressing Control see.
+
+133
+
+00:08:28,150  -->  00:08:35,660
+And now we need to build the bit where it checks the number of tickets.
+
+134
+
+00:08:36,860  -->  00:08:41,530
+So to check whether there are enough tickets instead of just letting them you know enjoy the film straight
+
+135
+
+00:08:41,530  -->  00:08:43,190
+away after checking their age.
+
+136
+
+00:08:43,270  -->  00:08:47,390
+I'm going to write here check check user age in here.
+
+137
+
+00:08:47,380  -->  00:08:47,780
+Wait a minute.
+
+138
+
+00:08:47,810  -->  00:08:49,000
+Just with a comment.
+
+139
+
+00:08:49,510  -->  00:08:52,240
+Check user age now in here.
+
+140
+
+00:08:52,270  -->  00:08:56,410
+We'll go to check check enough seats.
+
+141
+
+00:08:56,520  -->  00:08:57,040
+Right.
+
+142
+
+00:08:57,350  -->  00:09:00,560
+So if how do we how do we know the number of seats.
+
+143
+
+00:09:00,880  -->  00:09:05,240
+Well the number of seats is this is the second element.
+
+144
+
+00:09:05,360  -->  00:09:10,610
+So if the films of that choice.
+
+145
+
+00:09:10,880  -->  00:09:11,200
+Yes.
+
+146
+
+00:09:11,200  -->  00:09:15,440
+This is the the Basically this list for the corresponding film.
+
+147
+
+00:09:15,430  -->  00:09:23,780
+If the seats of that which is element 1 is greater than or equal or bet we can just say if that's greater
+
+148
+
+00:09:23,770  -->  00:09:30,390
+than zero right then they will then will get to tell them enjoy the film.
+
+149
+
+00:09:31,100  -->  00:09:37,470
+We tell them enjoy the film and we're going to subtract one from the number of tickets left.
+
+150
+
+00:09:37,550  -->  00:09:43,200
+So films choice 1.
+
+151
+
+00:09:45,730  -->  00:09:57,030
+Not messing up films of choice one equals films of choice one minus one.
+
+152
+
+00:09:57,130  -->  00:09:57,550
+Okay.
+
+153
+
+00:09:57,650  -->  00:10:03,680
+So were taking whatever the value is for the number of tickets and we're subtracting one from it then
+
+154
+
+00:10:03,680  -->  00:10:09,020
+saving it back in there another way that we can do this to make it a bit clearer.
+
+155
+
+00:10:09,020  -->  00:10:15,990
+We could say numb seats equals films of choice 1 Okay.
+
+156
+
+00:10:16,100  -->  00:10:21,480
+And if not seats is greater than zero.
+
+157
+
+00:10:21,500  -->  00:10:22,960
+They're going to say enjoy the film.
+
+158
+
+00:10:23,230  -->  00:10:23,830
+I'm numb.
+
+159
+
+00:10:23,830  -->  00:10:30,680
+Seats is going to become numb seats minus one.
+
+160
+
+00:10:31,340  -->  00:10:33,050
+But actually that bit won't work.
+
+161
+
+00:10:33,050  -->  00:10:33,440
+Actually no.
+
+162
+
+00:10:33,440  -->  00:10:35,940
+We do need to change that film.
+
+163
+
+00:10:36,020  -->  00:10:38,600
+Films choice it's going to become
+
+164
+
+00:10:46,760  -->  00:10:49,680
+we did need to keep that the way that it was before.
+
+165
+
+00:10:49,790  -->  00:10:55,130
+So we're just overwriting the number of seats right there.
+
+166
+
+00:10:55,130  -->  00:10:59,630
+And that's pretty much it to be honest I think you guys lensless What's that work.
+
+167
+
+00:10:59,630  -->  00:11:01,720
+So there's always five seats right.
+
+168
+
+00:11:01,730  -->  00:11:05,120
+So what film joy to watch was cause a Tarzan cause diseases to spell.
+
+169
+
+00:11:05,120  -->  00:11:05,760
+How old are you.
+
+170
+
+00:11:05,780  -->  00:11:07,190
+Let's say three.
+
+171
+
+00:11:07,190  -->  00:11:08,490
+You you're too young to see that film.
+
+172
+
+00:11:08,570  -->  00:11:09,260
+Oh OK.
+
+173
+
+00:11:09,500  -->  00:11:11,550
+If I'm Tarzan again watch in it.
+
+174
+
+00:11:11,570  -->  00:11:12,260
+How old are you.
+
+175
+
+00:11:12,260  -->  00:11:13,500
+I am 50.
+
+176
+
+00:11:13,870  -->  00:11:14,310
+OK.
+
+177
+
+00:11:14,390  -->  00:11:17,810
+So there should be four tickets Tarzan.
+
+178
+
+00:11:18,140  -->  00:11:18,950
+I'm 15.
+
+179
+
+00:11:19,000  -->  00:11:19,370
+Oh OK.
+
+180
+
+00:11:19,400  -->  00:11:21,560
+No there should be three tickets Tarzan.
+
+181
+
+00:11:21,560  -->  00:11:22,430
+I'm 15.
+
+182
+
+00:11:22,490  -->  00:11:25,370
+Now there should be two tickets was 15.
+
+183
+
+00:11:25,460  -->  00:11:28,890
+One ticket Tarzan 15.
+
+184
+
+00:11:28,910  -->  00:11:34,620
+This down now there should be no tickets left Tarzan 15.
+
+185
+
+00:11:34,700  -->  00:11:37,620
+And it actually didn't say enjoy the film.
+
+186
+
+00:11:37,750  -->  00:11:38,120
+Okay.
+
+187
+
+00:11:38,130  -->  00:11:41,240
+You did you know the way that we ran our tickets and it didn't say enjoy the film.
+
+188
+
+00:11:41,310  -->  00:11:45,050
+We put in just another message in here.
+
+189
+
+00:11:45,680  -->  00:11:48,440
+If number of seats is greater than zero then do all that.
+
+190
+
+00:11:48,530  -->  00:11:50,200
+Else.
+
+191
+
+00:11:50,480  -->  00:11:51,840
+Print.
+
+192
+
+00:11:51,980  -->  00:11:52,700
+Sorry.
+
+193
+
+00:11:52,820  -->  00:11:55,910
+We are sold out now.
+
+194
+
+00:11:55,940  -->  00:11:57,890
+You think you can trust me that that works.
+
+195
+
+00:11:57,890  -->  00:11:59,830
+You can run the code yourself.
+
+196
+
+00:12:00,070  -->  00:12:03,580
+But trust me that's going to that's going to work fine.
+
+197
+
+00:12:03,590  -->  00:12:05,210
+One thing that I do want to highlight though.
+
+198
+
+00:12:05,210  -->  00:12:09,890
+Can you see the way that we've got if statements inside of if statements inside of if statements and
+
+199
+
+00:12:09,890  -->  00:12:17,880
+all sorts of stuff going on there the way the python works to have something inside something else is
+
+200
+
+00:12:17,940  -->  00:12:19,810
+you can see that it's indenting it.
+
+201
+
+00:12:19,940  -->  00:12:22,970
+I mentioned this a bit earlier in the course but it makes more sense here.
+
+202
+
+00:12:23,000  -->  00:12:27,800
+There's a certain amount of indenting going on and this saves you from having to type loads of brackets
+
+203
+
+00:12:27,800  -->  00:12:30,710
+and loads of stuff like that load and which makes the code quite ugly.
+
+204
+
+00:12:30,710  -->  00:12:33,910
+Like in programs like Java and C and things like that.
+
+205
+
+00:12:34,550  -->  00:12:37,210
+But you do have to have the indentation.
+
+206
+
+00:12:37,200  -->  00:12:38,950
+Otherwise Python just won't work.
+
+207
+
+00:12:38,950  -->  00:12:42,990
+It won't be able to tell what's inside of something else.
+
+208
+
+00:12:43,070  -->  00:12:45,840
+So make sure you get a indentation right.
+
+209
+
+00:12:45,860  -->  00:12:47,810
+Idol's going to do it for you pretty much.
+
+210
+
+00:12:47,810  -->  00:12:51,590
+I mean if you just go to the end of the line and press enter you can see whether it's automatically
+
+211
+
+00:12:51,590  -->  00:12:52,530
+indented.
+
+212
+
+00:12:52,790  -->  00:12:56,270
+And if I told another if it's going to automatically indented again.
+
+213
+
+00:12:56,450  -->  00:12:58,930
+So you know idle's going to help you out with these things.
+
+214
+
+00:12:58,940  -->  00:13:04,070
+But that does need to be right so if your code's not working and it says indentation error or something
+
+215
+
+00:13:04,070  -->  00:13:06,430
+like that that's the problem.
+
+216
+
+00:13:06,510  -->  00:13:07,320
+But awesome.
+
+217
+
+00:13:07,380  -->  00:13:09,680
+I mean do you see how quick that was.
+
+218
+
+00:13:09,680  -->  00:13:15,020
+We've just built a program that can actually check whether a user is old enough to watch a film and
+
+219
+
+00:13:15,020  -->  00:13:17,310
+whether there are enough seats left in the system.
+
+220
+
+00:13:17,330  -->  00:13:23,660
+Also updates itself when someone books a film and also reduces the number of seats by one and when someone
+
+221
+
+00:13:23,660  -->  00:13:25,250
+purchases a ticket.
+
+222
+
+00:13:25,250  -->  00:13:30,290
+If you understood all of that and followed along and did it yourself you should be so proud of yourself
+
+223
+
+00:13:30,350  -->  00:13:31,100
+honestly.
+
+224
+
+00:13:31,280  -->  00:13:35,750
+You're learning so much and you should share this victory with your friends so they can celebrate along
+
+225
+
+00:13:35,750  -->  00:13:36,080
+with you.
+
+226
+
+00:13:36,080  -->  00:13:37,400
+This is a really big achievement.
+
+227
+
+00:13:37,400  -->  00:13:38,490
+I mean look at it man.
+
+228
+
+00:13:38,720  -->  00:13:48,170
+Looking at you've got dictionaries strings less while lubes if statements and user input updating variables
+
+229
+
+00:13:48,170  -->  00:13:51,980
+conditions logic all that stuff in there you should be so proud of yourself.
+
+230
+
+00:13:51,980  -->  00:13:54,220
+Honestly I'm very proud of you as well.
+
+231
+
+00:13:54,260  -->  00:14:00,650
+Now in this project we've applied data structures to create an assortment of films use plenty of logic
+
+232
+
+00:14:00,870  -->  00:14:08,090
+data type conversions converting here we've been casting and basically using everything since the start
+
+233
+
+00:14:08,090  -->  00:14:10,190
+of the cause into a functional program.
+
+234
+
+00:14:10,370  -->  00:14:14,630
+And with that now we're going to end on a high and come to the end of this section of the course on
+
+235
+
+00:14:14,630  -->  00:14:18,950
+data structures as you've like learned so much with this section of the course lets us have a quick
+
+236
+
+00:14:18,950  -->  00:14:24,860
+recap in the next video to go over what we've learned just to make sure it all sticks and I'll see you
+
+237
+
+00:14:24,860  -->  00:14:26,120
+in the next video.

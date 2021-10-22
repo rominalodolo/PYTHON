@@ -1,0 +1,274 @@
+1
+
+00:00:00,480  -->  00:00:02,180
+Hello there you beautiful people.
+
+2
+
+00:00:02,190  -->  00:00:05,700
+And welcome to the review lecture for this section on Python.
+
+3
+
+00:00:05,730  -->  00:00:11,040
+Data Structures now in this sorrowful section of the course were really covered a lot and hopefully
+
+4
+
+00:00:11,100  -->  00:00:15,720
+have you've gotten a very powerful tool that you can using your programs to structure your data and
+
+5
+
+00:00:15,720  -->  00:00:16,470
+manipulate it.
+
+6
+
+00:00:16,470  -->  00:00:18,430
+Really however you want.
+
+7
+
+00:00:18,510  -->  00:00:23,800
+We started off by looking at lists the most common type of data structure in Python.
+
+8
+
+00:00:23,820  -->  00:00:25,090
+First you learn the basics.
+
+9
+
+00:00:25,110  -->  00:00:30,570
+And so what the list is and how to create one after that you learn the list can hold different types
+
+10
+
+00:00:30,570  -->  00:00:31,220
+of data.
+
+11
+
+00:00:31,380  -->  00:00:35,880
+And the lists are an Iterable data type which means they can be broken up into little pieces called
+
+12
+
+00:00:35,940  -->  00:00:36,710
+elements.
+
+13
+
+00:00:36,900  -->  00:00:42,470
+Each element is accessible via an index and you learn how to use indexes to access certain elements
+
+14
+
+00:00:42,510  -->  00:00:47,580
+and also how to take slices through your lists to access multiple elements at once.
+
+15
+
+00:00:47,580  -->  00:00:52,620
+Then we stepped it up a gear and you learn how to use lists to create multi-dimensional data structures
+
+16
+
+00:00:52,920  -->  00:00:58,470
+like tables and use indexes like coordinates to access certain rows and columns.
+
+17
+
+00:00:58,530  -->  00:01:02,850
+You only need this all the time but it might come in useful when you want to make a Rubik's Cube solver
+
+18
+
+00:01:02,940  -->  00:01:04,330
+or something like that.
+
+19
+
+00:01:04,830  -->  00:01:09,210
+So after that you built Travis the ridiculous but totally lovable secuity robot.
+
+20
+
+00:01:09,660  -->  00:01:14,410
+In that project you heard all about how to add items to a list and how to delete them from a list.
+
+21
+
+00:01:14,520  -->  00:01:19,230
+You learned how data structures can be combined with logic systems and you also introduce to the.
+
+22
+
+00:01:19,230  -->  00:01:24,440
+In keyword word which checks whether some value is in an Iterable data type.
+
+23
+
+00:01:24,450  -->  00:01:28,770
+You also learned about the non data type which she learned how to manage their use of lists methods
+
+24
+
+00:01:28,770  -->  00:01:31,480
+correctly so that you don't accidentally delete your data.
+
+25
+
+00:01:31,900  -->  00:01:34,460
+After that we started talking all about tuples.
+
+26
+
+00:01:34,500  -->  00:01:38,550
+You learn that tools are basically like lists except that they're immutable which means they cannot
+
+27
+
+00:01:38,550  -->  00:01:40,180
+be changed once you have created them.
+
+28
+
+00:01:40,200  -->  00:01:43,890
+And this keeps your data safe at the expense of some flexibility.
+
+29
+
+00:01:43,890  -->  00:01:48,450
+You know how to create two balls and your cylinder call trick called multiple assignment where you can
+
+30
+
+00:01:48,450  -->  00:01:52,150
+create multiple variables with just one line of code.
+
+31
+
+00:01:52,170  -->  00:01:54,660
+After that we moved on to the dictionary data type.
+
+32
+
+00:01:54,710  -->  00:01:59,970
+Now dictionaries are a glorious data type that allow us to look at values with easy to remember keys
+
+33
+
+00:01:59,970  -->  00:02:00,520
+.
+
+34
+
+00:02:00,570  -->  00:02:04,770
+You made a mini database of students and stored their ages under their names.
+
+35
+
+00:02:04,770  -->  00:02:10,170
+You don't have to add new keys to dictionaries head update their values and how to delete them.
+
+36
+
+00:02:10,200  -->  00:02:16,230
+You also learned about the keys values and items methods for dictionaries to get addiction's keys values
+
+37
+
+00:02:16,230  -->  00:02:22,380
+and items respectively and also how to get this information in list format using the list function.
+
+38
+
+00:02:22,430  -->  00:02:28,590
+Now if all of that wasn't enough yourself had had to put lists and even dictionaries inside of dictionaries
+
+39
+
+00:02:28,890  -->  00:02:31,240
+which gave your dictionaries superpower's basically.
+
+40
+
+00:02:31,290  -->  00:02:37,530
+We use this to store not only a student's name but also their age their student I.D. and their grade
+
+41
+
+00:02:37,530  -->  00:02:38,490
+.
+
+42
+
+00:02:38,490  -->  00:02:43,680
+Then finally we combine all of the stuff we've learned so far in the course to make a cinema booking
+
+43
+
+00:02:43,680  -->  00:02:44,580
+system.
+
+44
+
+00:02:44,580  -->  00:02:50,550
+This program combined everything we know so far about variables numbers strings logic and data structures
+
+45
+
+00:02:50,760  -->  00:02:53,140
+to really show off your skills as a python pro.
+
+46
+
+00:02:53,250  -->  00:02:54,650
+So bravo.
+
+47
+
+00:02:54,810  -->  00:02:59,520
+This section has really brought a lot of new skills to the table and I hope you really let these concepts
+
+48
+
+00:02:59,520  -->  00:03:00,060
+sink in.
+
+49
+
+00:03:00,090  -->  00:03:05,770
+As they'll come in useful time and time and time and time and time again.
+
+50
+
+00:03:06,360  -->  00:03:11,970
+Oh sorry was I repeating myself words probably because the next section of the Course is on loops loops
+
+51
+
+00:03:11,970  -->  00:03:17,600
+help to automate the task of programming itself and are a critical piece of every programming tool kit
+
+52
+
+00:03:18,150  -->  00:03:20,390
+loops l.a. to do in one line of code.
+
+53
+
+00:03:20,400  -->  00:03:25,950
+What might take hundreds or thousands or even millions of lines of code to do otherwise and Python makes
+
+54
+
+00:03:25,950  -->  00:03:28,020
+them crazily easy to do.
+
+55
+
+00:03:28,050  -->  00:03:32,920
+Now you're not going to want to miss this so see you in the next video.

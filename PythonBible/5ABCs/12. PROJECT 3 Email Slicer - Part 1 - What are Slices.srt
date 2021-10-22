@@ -1,0 +1,864 @@
+1
+
+00:00:00,660  -->  00:00:02,140
+Hello there you beautiful people.
+
+2
+
+00:00:02,160  -->  00:00:04,260
+And welcome to the e-mail slicer project.
+
+3
+
+00:00:04,290  -->  00:00:09,690
+Well we're going to learn all about slicing up strings now slicing is a very useful thing that Python
+
+4
+
+00:00:09,690  -->  00:00:10,400
+allows us to do.
+
+5
+
+00:00:10,410  -->  00:00:14,740
+And it's simplicity really sets it apart from other programming languages.
+
+6
+
+00:00:14,760  -->  00:00:17,290
+Now in this project we're going to create an e-mail slicer.
+
+7
+
+00:00:17,310  -->  00:00:21,660
+There were ask someone for their email address and it will tell them what their username is and tell
+
+8
+
+00:00:21,660  -->  00:00:26,970
+them who their email account is held with or their domain name which will in a very basic way anyway
+
+9
+
+00:00:26,970  -->  00:00:27,280
+.
+
+10
+
+00:00:27,360  -->  00:00:32,580
+So before all of that in this lecture I'm going to explain to you what slices are and I'm sure you'll
+
+11
+
+00:00:32,580  -->  00:00:33,020
+agree.
+
+12
+
+00:00:33,030  -->  00:00:34,850
+By the end of it they're super awesome.
+
+13
+
+00:00:34,950  -->  00:00:38,910
+And by the end of the lecture you'll know how to chop strings up to use just the information you want
+
+14
+
+00:00:38,910  -->  00:00:39,250
+.
+
+15
+
+00:00:39,270  -->  00:00:40,450
+So let's get into it.
+
+16
+
+00:00:40,800  -->  00:00:42,200
+So what is a slice.
+
+17
+
+00:00:42,390  -->  00:00:47,540
+Well a slice as you might imagine is just a small piece of something larger.
+
+18
+
+00:00:47,550  -->  00:00:52,380
+Now for this to make any sense we need to take a fresh look at what strings actually are.
+
+19
+
+00:00:52,380  -->  00:00:57,220
+A string is basically a bunch of characters and letters that are strung together.
+
+20
+
+00:00:57,240  -->  00:00:59,780
+So let's say if I have the string.
+
+21
+
+00:01:00,540  -->  00:01:02,630
+A B C D E F G.
+
+22
+
+00:01:02,670  -->  00:01:03,180
+1.
+
+23
+
+00:01:03,240  -->  00:01:05,540
+One two three four five and six.
+
+24
+
+00:01:05,700  -->  00:01:06,300
+Okay.
+
+25
+
+00:01:06,330  -->  00:01:15,000
+So here we have a bunch of letters and numbers that are strung together to make a string.
+
+26
+
+00:01:15,020  -->  00:01:18,850
+Now in Python strings are an Iterable datatype.
+
+27
+
+00:01:19,080  -->  00:01:20,270
+Now what the hell does that mean.
+
+28
+
+00:01:20,550  -->  00:01:28,040
+Well when something is Iterable it means you can go step by step along it until you get to the end Iterable
+
+29
+
+00:01:28,080  -->  00:01:31,620
+means you can go step by step along it until you get to the end.
+
+30
+
+00:01:31,620  -->  00:01:36,460
+Now each of these steps is called an element so there would be one step.
+
+31
+
+00:01:36,480  -->  00:01:37,630
+There's another step.
+
+32
+
+00:01:37,740  -->  00:01:38,910
+There's another step.
+
+33
+
+00:01:38,910  -->  00:01:42,930
+There's another step and each of those are elements of the string.
+
+34
+
+00:01:43,150  -->  00:01:47,820
+Now each element also has a number that refers to its position.
+
+35
+
+00:01:48,090  -->  00:01:55,320
+So this number is called an index and by using the index you can get to the element so by using the
+
+36
+
+00:01:55,320  -->  00:01:56,820
+index you get to the element.
+
+37
+
+00:01:56,850  -->  00:02:00,180
+Now these index numbers start at zero.
+
+38
+
+00:02:00,270  -->  00:02:03,650
+That means the first element is indexed zero.
+
+39
+
+00:02:03,720  -->  00:02:05,880
+The second element is index 1.
+
+40
+
+00:02:06,030  -->  00:02:14,100
+The third element is indexed to be indexed for our sorry index three must be index for index 5 and so
+
+41
+
+00:02:14,100  -->  00:02:15,930
+on.
+
+42
+
+00:02:15,990  -->  00:02:21,810
+So the best way to show you this is if we had an example a rather long word so let's just say we have
+
+43
+
+00:02:21,810  -->  00:02:30,690
+word equals Supercalifragilistic XP hourly doges.
+
+44
+
+00:02:30,900  -->  00:02:32,880
+Okay so it's just so valla about now.
+
+45
+
+00:02:32,970  -->  00:02:35,760
+If you've ever watched Mary Poppins then that word will make sense.
+
+46
+
+00:02:35,760  -->  00:02:38,040
+If not Go ahead watch Mary Poppins.
+
+47
+
+00:02:38,130  -->  00:02:42,630
+No we just want the first letter of this the letter S then.
+
+48
+
+00:02:42,650  -->  00:02:49,380
+We just have to take the first index or index zero probably the best way to say is the 0 4 index of
+
+49
+
+00:02:49,380  -->  00:02:54,410
+the string so we do that by typing word which is the name of the variable.
+
+50
+
+00:02:54,510  -->  00:02:59,090
+Then opening up a spear a pair of square brackets.
+
+51
+
+00:02:59,390  -->  00:03:03,530
+And inside here we type the number of the index that we want.
+
+52
+
+00:03:03,690  -->  00:03:10,970
+So we want the 0 0 index so we type 0 and that's going to give us S..
+
+53
+
+00:03:11,450  -->  00:03:18,510
+Now even though that I've just technically sliced out the letter S the original data is still unchanged
+
+54
+
+00:03:18,510  -->  00:03:18,810
+.
+
+55
+
+00:03:18,810  -->  00:03:23,670
+So as you can see I sliced o ass but it's still there in the original.
+
+56
+
+00:03:23,790  -->  00:03:24,370
+Variable.
+
+57
+
+00:03:24,390  -->  00:03:28,300
+And that's because strings are immutable meaning they cannot be changed.
+
+58
+
+00:03:28,350  -->  00:03:34,080
+So if you wanted to say it correctly I mean you could say that strings are an immutable Iterable datatype
+
+59
+
+00:03:34,380  -->  00:03:40,980
+because they can't be changed and you can iterate over each element so as a micro challenge for you
+
+60
+
+00:03:40,980  -->  00:03:41,250
+.
+
+61
+
+00:03:41,310  -->  00:03:47,400
+I want you to see whether you can just go ahead and pull out the letter P case or use a just a mini
+
+62
+
+00:03:47,400  -->  00:03:53,060
+slice to take out this letter P here from the string.
+
+63
+
+00:03:53,160  -->  00:03:55,320
+So how do you get on the way that I do it.
+
+64
+
+00:03:55,410  -->  00:03:58,280
+AK is we know that this is the 0 4 index.
+
+65
+
+00:03:58,290  -->  00:04:02,000
+This is the first index and this is the second index right.
+
+66
+
+00:04:02,250  -->  00:04:05,860
+So what we do is type a word of two.
+
+67
+
+00:04:06,150  -->  00:04:08,030
+And that's going to give us the letter P.
+
+68
+
+00:04:08,430  -->  00:04:11,230
+So what if you wanted to take more than one letter.
+
+69
+
+00:04:11,460  -->  00:04:14,550
+Well for this we use a slice okay.
+
+70
+
+00:04:14,640  -->  00:04:18,780
+These will just kind of picking out little elements here and there but if you want to take out a proper
+
+71
+
+00:04:18,780  -->  00:04:22,070
+slice from the variable then this is how we do it.
+
+72
+
+00:04:22,320  -->  00:04:24,960
+So the format of a slice is like this.
+
+73
+
+00:04:24,960  -->  00:04:26,400
+You type a variable name.
+
+74
+
+00:04:26,720  -->  00:04:29,110
+Okay then you put some square brackets.
+
+75
+
+00:04:29,190  -->  00:04:36,210
+You put the index you want to start up the index you want to go to and the step in between each element
+
+76
+
+00:04:36,210  -->  00:04:37,150
+you want to select.
+
+77
+
+00:04:37,230  -->  00:04:39,500
+So you have a variable name.
+
+78
+
+00:04:39,540  -->  00:04:42,220
+In our case this would be word.
+
+79
+
+00:04:42,890  -->  00:04:46,980
+And let's say we wanted to take from this day we just wanted to take the word super.
+
+80
+
+00:04:47,180  -->  00:04:52,200
+Okay well we want to start from Index zero because that's the letter S.
+
+81
+
+00:04:52,480  -->  00:04:55,920
+Now the tricky part comes when you have end here.
+
+82
+
+00:04:56,020  -->  00:05:02,050
+So we want are right we want to be nothing at 0 1 2 3 4.
+
+83
+
+00:05:02,050  -->  00:05:03,760
+This is indexed for.
+
+84
+
+00:05:03,850  -->  00:05:13,200
+But the way the end works is it is the you you put in the index of where you want to go to.
+
+85
+
+00:05:13,360  -->  00:05:13,760
+OK.
+
+86
+
+00:05:13,930  -->  00:05:17,460
+So if we wanted to go up to.
+
+87
+
+00:05:17,810  -->  00:05:22,950
+We want if we wanted our We'd have to go up to the letter C right but not including it.
+
+88
+
+00:05:23,200  -->  00:05:27,210
+So to take this way we have to go up to here.
+
+89
+
+00:05:27,610  -->  00:05:35,780
+Since here this letter C has index of 0 1 2 3 4 5 we put in there five.
+
+90
+
+00:05:36,040  -->  00:05:37,240
+And we want every letter.
+
+91
+
+00:05:37,270  -->  00:05:39,790
+So we put one as the step.
+
+92
+
+00:05:39,790  -->  00:05:40,980
+So let's watch that now.
+
+93
+
+00:05:41,260  -->  00:05:43,600
+We see we get out the word super.
+
+94
+
+00:05:43,600  -->  00:05:46,650
+We started at index 0 and included that one.
+
+95
+
+00:05:46,660  -->  00:05:53,970
+And we went up to but not including the letter C so that the letter C was indexed five.
+
+96
+
+00:05:54,040  -->  00:05:54,910
+So we put that there.
+
+97
+
+00:05:54,910  -->  00:06:00,810
+We didn't want that we just want to go up to it and we wanted to go in one element every time.
+
+98
+
+00:06:00,820  -->  00:06:06,010
+So if I just just to show you what the steptoe's if I put two here.
+
+99
+
+00:06:06,460  -->  00:06:12,260
+You see we get S P R because this goes zero go up to gets P gook to GA.
+
+100
+
+00:06:12,430  -->  00:06:12,760
+Okay.
+
+101
+
+00:06:12,770  -->  00:06:13,680
+That's what the steps are doing.
+
+102
+
+00:06:13,690  -->  00:06:16,960
+But one was taking every single one.
+
+103
+
+00:06:17,360  -->  00:06:23,470
+So as a micro challenge for you then I want you to go ahead and create a slice that will take out the
+
+104
+
+00:06:23,470  -->  00:06:24,870
+word callee.
+
+105
+
+00:06:24,970  -->  00:06:28,230
+Here Ill take that out and print that to the screen.
+
+106
+
+00:06:28,450  -->  00:06:36,400
+So go ahead pause the video now and try to use a slice to take out the word calleigh from word.
+
+107
+
+00:06:38,380  -->  00:06:40,300
+So how do you get on did you manage it.
+
+108
+
+00:06:40,300  -->  00:06:48,190
+Well here's the way that I have gone about it I would know that the letter C is at index 0 1 2 3 4 5
+
+109
+
+00:06:48,200  -->  00:06:48,370
+.
+
+110
+
+00:06:48,580  -->  00:06:58,610
+So I'd put that as the start and I'd want to go up to the letter F and the letter f is 0 1 2 3 4 5 6
+
+111
+
+00:06:58,610  -->  00:07:06,160
+7 8 9 a case I put nine in there and I want every girl every one so I put a step one and you see we
+
+112
+
+00:07:06,160  -->  00:07:07,010
+get calleigh out.
+
+113
+
+00:07:07,090  -->  00:07:12,250
+So if you got that then absolutely fantastic you're really getting ahead with with strings like this
+
+114
+
+00:07:12,260  -->  00:07:12,440
+.
+
+115
+
+00:07:12,550  -->  00:07:16,170
+Now there are some shortcuts to using string which are super useful.
+
+116
+
+00:07:16,330  -->  00:07:21,550
+So let's say we wanted to just take from the letter C all the way to the end for that all we have to
+
+117
+
+00:07:21,550  -->  00:07:23,500
+do is type a word.
+
+118
+
+00:07:23,500  -->  00:07:27,770
+Then the start was going to be five because that's where C is right and C is index 5.
+
+119
+
+00:07:27,970  -->  00:07:34,060
+Then just type a colon and Python is now going to automatically assume that I want from 5 all the way
+
+120
+
+00:07:34,060  -->  00:07:36,880
+to the end which is what we see here pretty handy right.
+
+121
+
+00:07:37,120  -->  00:07:38,610
+So here's another shortcut.
+
+122
+
+00:07:38,620  -->  00:07:43,510
+What if I wanted to go from calleigh again from courtesy all the way to the end.
+
+123
+
+00:07:43,570  -->  00:07:53,230
+But in steps of too well for that I just type the word mamasa the way word five and then just type another
+
+124
+
+00:07:53,230  -->  00:07:58,830
+coal on and to see you can see that we've left the end blank here because it goes start.
+
+125
+
+00:07:58,900  -->  00:07:59,410
+END.
+
+126
+
+00:07:59,440  -->  00:08:02,420
+Step right we've left end blank.
+
+127
+
+00:08:02,440  -->  00:08:03,520
+We didn't tell it where to end.
+
+128
+
+00:08:03,520  -->  00:08:05,850
+So it's going to assume that to go all the way to the end.
+
+129
+
+00:08:05,860  -->  00:08:12,670
+But in steps of two and we're going to see that it does that it goes C then L then F then a C.
+
+130
+
+00:08:12,670  -->  00:08:16,610
+Now then for the hey are you an R and T and all the way all the way until the end.
+
+131
+
+00:08:16,630  -->  00:08:18,320
+So that's a really useful trick as well.
+
+132
+
+00:08:18,430  -->  00:08:22,610
+So what if we wanted everything up to index 7 let's say.
+
+133
+
+00:08:22,630  -->  00:08:28,560
+So this is indexed 5 6 and 7 so everything up until the L..
+
+134
+
+00:08:28,870  -->  00:08:30,130
+But not including it.
+
+135
+
+00:08:30,160  -->  00:08:36,620
+So for that we would type a word leaves start blank and type seven just like that.
+
+136
+
+00:08:36,670  -->  00:08:40,940
+And that is going to give us everything up to index 7.
+
+137
+
+00:08:40,990  -->  00:08:43,110
+So since index 7 is that L..
+
+138
+
+00:08:43,120  -->  00:08:46,430
+We're going to go up to L. But not include it.
+
+139
+
+00:08:46,450  -->  00:08:49,960
+I guess that's something you've got to be aware of when using slices.
+
+140
+
+00:08:49,960  -->  00:08:57,010
+It's always up to but not including if we wanted the L. we'd have to do opt to 8 which is the one after
+
+141
+
+00:08:57,280  -->  00:09:01,200
+the L right so that would be that to give to get us the other.
+
+142
+
+00:09:01,690  -->  00:09:07,490
+So we go up a few lines you saw that we typed 0 to 5 insteps of 1 to get super right.
+
+143
+
+00:09:07,510  -->  00:09:09,350
+And that that war that will work fine.
+
+144
+
+00:09:09,550  -->  00:09:15,670
+But no with our shortcuts all we've got to do is type word coal on five like that because zero it's
+
+145
+
+00:09:15,670  -->  00:09:22,110
+going to assume you want to start here at zero and it's going to assume you want steps of one.
+
+146
+
+00:09:22,120  -->  00:09:27,510
+If I just do that we're going to get super straight away see you see just how much easier I is.
+
+147
+
+00:09:27,580  -->  00:09:29,110
+Now this is super useful.
+
+148
+
+00:09:29,110  -->  00:09:31,310
+You can actually reverse a string.
+
+149
+
+00:09:31,510  -->  00:09:33,810
+Well the steps can actually be negative.
+
+150
+
+00:09:33,940  -->  00:09:34,340
+Right.
+
+151
+
+00:09:34,510  -->  00:09:36,490
+And we can use this to reverse a string.
+
+152
+
+00:09:36,490  -->  00:09:41,830
+So if I did word and I just did coal on coal on minus 1.
+
+153
+
+00:09:41,830  -->  00:09:46,710
+Basically what that's going to say is glow from the end to the start in steps of minus one.
+
+154
+
+00:09:46,720  -->  00:09:52,000
+And if I do that we're going to see that we've actually just reversed the whole string in just one line
+
+155
+
+00:09:52,000  -->  00:09:52,690
+of code.
+
+156
+
+00:09:52,720  -->  00:09:57,770
+Now doing that in any other programming languages is a monster really so doing.
+
+157
+
+00:09:57,760  -->  00:10:01,090
+Being able to do that in such a simple way is a really powerful trick.
+
+158
+
+00:10:01,090  -->  00:10:03,940
+So you know understand the basics of how to take slices right.
+
+159
+
+00:10:03,940  -->  00:10:10,180
+We know that strings have basically an Iterable datatype which means they're made up of little elements
+
+160
+
+00:10:10,450  -->  00:10:14,990
+and each of these little elements has an index that starts from zero.
+
+161
+
+00:10:15,020  -->  00:10:18,160
+That you can use to access that element.
+
+162
+
+00:10:18,160  -->  00:10:21,090
+And when you take a slice you put the starting element here.
+
+163
+
+00:10:21,130  -->  00:10:26,550
+The starting date index sorry then the the where you want to go up to.
+
+164
+
+00:10:26,680  -->  00:10:33,530
+And then the step and we also know a few short cuts here and there but we have a main issue in that
+
+165
+
+00:10:33,620  -->  00:10:36,250
+the way that I've been doing it so far is error prone.
+
+166
+
+00:10:36,250  -->  00:10:41,170
+I'm kind of counting up the index from the beginning and if there can be time consuming and I can make
+
+167
+
+00:10:41,170  -->  00:10:45,010
+errors write it all it takes it for me to count one number wrong and I've messed the whole thing up
+
+168
+
+00:10:45,010  -->  00:10:45,510
+.
+
+169
+
+00:10:45,520  -->  00:10:51,670
+So what I'm going to show you in the next video is how to pretty much automate this process right using
+
+170
+
+00:10:51,670  -->  00:10:55,810
+Python's index function which is a massively powerful trick when using strings.
+
+171
+
+00:10:55,870  -->  00:10:58,760
+So I will show you that in the next video.
+
+172
+
+00:10:58,780  -->  00:11:00,000
+In the interest of time.
+
+173
+
+00:11:00,040  -->  00:11:01,190
+So I ask you that.

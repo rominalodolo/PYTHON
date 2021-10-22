@@ -1,0 +1,629 @@
+1
+
+00:00:00,460  -->  00:00:01,900
+Ello there you beautiful people.
+
+2
+
+00:00:01,920  -->  00:00:04,820
+And in this lecture we're going to create the e-mail slicer.
+
+3
+
+00:00:04,830  -->  00:00:06,260
+So I hope you're excited.
+
+4
+
+00:00:06,300  -->  00:00:07,600
+This project going to tied together.
+
+5
+
+00:00:07,620  -->  00:00:09,730
+Everything we've learned about strings in this section.
+
+6
+
+00:00:09,830  -->  00:00:14,720
+So it is gathering user input slicing string formatting and even the occasional string method.
+
+7
+
+00:00:14,910  -->  00:00:19,230
+So basically how this is going to work is that we're going to ask the user for their e-mail address
+
+8
+
+00:00:19,260  -->  00:00:20,840
+using the input function.
+
+9
+
+00:00:21,000  -->  00:00:25,440
+After that we're going to slice the e-mail address for the user name and the email domain name and the
+
+10
+
+00:00:25,440  -->  00:00:29,570
+user name is what is before the at symbol and the domain name is what's after the at symbol.
+
+11
+
+00:00:29,580  -->  00:00:34,470
+In case you're wondering so we're going to use string formatting to output the user a message that tells
+
+12
+
+00:00:34,470  -->  00:00:36,380
+in their user name and their domain name.
+
+13
+
+00:00:36,420  -->  00:00:37,550
+Pretty cool right.
+
+14
+
+00:00:37,560  -->  00:00:42,240
+So after this ledger you have to understand how each of the different pieces regarding strings fits
+
+15
+
+00:00:42,240  -->  00:00:45,980
+together and you also can have built another core python program to prove it.
+
+16
+
+00:00:45,990  -->  00:00:47,640
+Let's get started.
+
+17
+
+00:00:47,640  -->  00:00:54,750
+So the first thing I'm going to do is create another script so go far new file save this on the desktop
+
+18
+
+00:00:55,020  -->  00:00:59,420
+in the python Bible and I'm going to call this slice a dot P Y.
+
+19
+
+00:00:59,420  -->  00:01:01,980
+And when I maximize this were all good to go.
+
+20
+
+00:01:02,190  -->  00:01:06,330
+So I'm going to use Python comments to help give us a bit of an outline for what we're going to do in
+
+21
+
+00:01:06,330  -->  00:01:07,340
+the project.
+
+22
+
+00:01:07,350  -->  00:01:10,280
+The first thing we're going to do is to get the user's email address.
+
+23
+
+00:01:10,350  -->  00:01:18,220
+So get user e-mail address then we're going to slice out the user name slice out user name we'll go
+
+24
+
+00:01:18,260  -->  00:01:25,500
+to slice out the domain name slice demesne name we'll go to format some kind of output message so format
+
+25
+
+00:01:25,500  -->  00:01:29,870
+message and then was going to display the output message.
+
+26
+
+00:01:29,970  -->  00:01:33,450
+So display output message.
+
+27
+
+00:01:33,690  -->  00:01:34,100
+Awesome.
+
+28
+
+00:01:34,110  -->  00:01:35,730
+That's easy enough right.
+
+29
+
+00:01:35,730  -->  00:01:40,830
+All right so now that we've planned though our project Let's go follow the checklist and get the user's
+
+30
+
+00:01:40,830  -->  00:01:42,480
+email address nef for this.
+
+31
+
+00:01:42,480  -->  00:01:48,270
+As you'll recall to get a to get a input from a user willing to use the input function.
+
+32
+
+00:01:48,420  -->  00:01:54,240
+So we're going to call whatever the input is a variable called e-mail and use the input function by
+
+33
+
+00:01:54,240  -->  00:01:55,410
+asking them a question.
+
+34
+
+00:01:55,560  -->  00:02:02,200
+What is your e-mail address just like that.
+
+35
+
+00:02:02,220  -->  00:02:05,130
+I'm also going just going to capitalize it to make sure a little bit nicer.
+
+36
+
+00:02:05,190  -->  00:02:11,370
+Now the user may very well type in their e-mail address and then accidentally press a space or something
+
+37
+
+00:02:11,370  -->  00:02:14,660
+like that which we don't want inside of our input.
+
+38
+
+00:02:14,970  -->  00:02:20,860
+So whatever the user inputs were going to strip away all of the blank spaces from it using the strip
+
+39
+
+00:02:20,860  -->  00:02:22,260
+string method.
+
+40
+
+00:02:22,260  -->  00:02:24,060
+So while up there we are.
+
+41
+
+00:02:24,060  -->  00:02:25,920
+There's the first step of the project done.
+
+42
+
+00:02:26,400  -->  00:02:29,850
+So a step number two we need to slice out the user name.
+
+43
+
+00:02:29,850  -->  00:02:32,580
+Now the user name is everything up to the at symbol.
+
+44
+
+00:02:32,610  -->  00:02:42,540
+So if there you know for example if there you if their e-mail was like Now Barb Doe at finger dot com
+
+45
+
+00:02:42,990  -->  00:02:47,920
+then their username would be Bob Dole and the domain there would be Thank you doctor.
+
+46
+
+00:02:48,030  -->  00:02:50,160
+Okay so which one the usenet with them in it which is everything.
+
+47
+
+00:02:50,160  -->  00:02:52,360
+Up until the at symbol.
+
+48
+
+00:02:52,410  -->  00:03:00,150
+So I want you to create a variable called user and using the index function and a slice.
+
+49
+
+00:03:00,150  -->  00:03:08,310
+I want you to take a slice of the e-mail variable and which is which corresponds to the to their email
+
+50
+
+00:03:08,310  -->  00:03:08,850
+address.
+
+51
+
+00:03:08,850  -->  00:03:10,370
+It could be any e-mail address.
+
+52
+
+00:03:10,470  -->  00:03:17,790
+So I want you to take use the index function to take a slice up until the at symbol and save that in
+
+53
+
+00:03:17,790  -->  00:03:20,130
+the variable called user.
+
+54
+
+00:03:20,190  -->  00:03:26,960
+So you know the drop pause the video now and come back when you're done with up to see how you did.
+
+55
+
+00:03:28,830  -->  00:03:30,230
+So how do you get on.
+
+56
+
+00:03:30,300  -->  00:03:32,120
+This is the way that I'd have gone about doing it.
+
+57
+
+00:03:32,220  -->  00:03:32,680
+I would.
+
+58
+
+00:03:32,700  -->  00:03:34,180
+Well let me just do this.
+
+59
+
+00:03:34,350  -->  00:03:42,690
+I would have created a variable called user and assigned it the value of a slice from e-mail starting
+
+60
+
+00:03:42,690  -->  00:03:49,360
+at the beginning opened till the index of the at symbol.
+
+61
+
+00:03:49,570  -->  00:03:50,180
+Okay.
+
+62
+
+00:03:50,250  -->  00:03:55,030
+So everything up to the at symbol is going to be saved in the user variable.
+
+63
+
+00:03:55,080  -->  00:03:57,270
+Nice and easy.
+
+64
+
+00:03:57,270  -->  00:04:02,640
+All right so now we need to get the domain name which is everything after the at symbol.
+
+65
+
+00:04:02,730  -->  00:04:08,320
+So there's another micro challenge I want you to use slices again to store in a variable called Domain
+
+66
+
+00:04:08,790  -->  00:04:12,600
+everything after the at symbol in that email variable.
+
+67
+
+00:04:12,990  -->  00:04:19,980
+So go ahead now and pause the video and give that a go try to get everything after the at symbol not
+
+68
+
+00:04:19,980  -->  00:04:21,270
+including the outer symbol.
+
+69
+
+00:04:21,270  -->  00:04:27,090
+Bear in mind everything after the at symbol all the way until the end of the string and then come back
+
+70
+
+00:04:27,090  -->  00:04:31,380
+to see how you did.
+
+71
+
+00:04:31,380  -->  00:04:32,930
+How did you know did you get on all right.
+
+72
+
+00:04:33,180  -->  00:04:34,280
+There's a bit tricky right.
+
+73
+
+00:04:34,410  -->  00:04:41,790
+So the way that I have done it is I'd have create the variable called domain and other set that equal
+
+74
+
+00:04:41,790  -->  00:04:44,050
+to a slice from email.
+
+75
+
+00:04:44,520  -->  00:04:51,100
+But we want to go from we want to take everything after the V out symbol right.
+
+76
+
+00:04:51,300  -->  00:05:00,390
+So the way that I do that is I take the index of the at symbol like that but we don't want to start
+
+77
+
+00:05:00,420  -->  00:05:06,370
+there because if we start there then what's going to happen is it's going to include the at symbol.
+
+78
+
+00:05:06,420  -->  00:05:09,730
+So I want to take from that index plus one.
+
+79
+
+00:05:09,750  -->  00:05:15,210
+I want to go to the one after it then just use a colon to go all the way up until the end of the string
+
+80
+
+00:05:15,210  -->  00:05:15,390
+.
+
+81
+
+00:05:15,390  -->  00:05:16,720
+So this is the way that I have done it.
+
+82
+
+00:05:16,890  -->  00:05:21,770
+Astarte is the index of the of the at symbol plus one.
+
+83
+
+00:05:21,870  -->  00:05:23,880
+So it's one after it.
+
+84
+
+00:05:23,940  -->  00:05:27,890
+So if the index was five then this would give a six.
+
+85
+
+00:05:27,930  -->  00:05:28,650
+She one after.
+
+86
+
+00:05:28,650  -->  00:05:33,210
+And then we'd use the coal on to give us a short cut to go all the way until the end of the stream.
+
+87
+
+00:05:33,270  -->  00:05:35,790
+And that's going to get us there domain name.
+
+88
+
+00:05:35,870  -->  00:05:36,380
+All right.
+
+89
+
+00:05:36,390  -->  00:05:43,290
+The next step is to create a the output message and the output message is going to look something like
+
+90
+
+00:05:43,290  -->  00:05:43,640
+this.
+
+91
+
+00:05:43,650  -->  00:05:54,320
+I'm going to have outputs equals your user name is blank and your domain name is blank.
+
+92
+
+00:05:54,330  -->  00:06:02,730
+Now I want you to at the end of this string here to use the Format function to put in the first place
+
+93
+
+00:06:02,940  -->  00:06:08,360
+the username and in the second place the domain name which we've taken out from here so is a micro try
+
+94
+
+00:06:08,400  -->  00:06:08,460
+.
+
+95
+
+00:06:08,490  -->  00:06:13,980
+Use the Format function to put the user name in here the domain name in here then come back to see how
+
+96
+
+00:06:13,980  -->  00:06:16,190
+you did.
+
+97
+
+00:06:17,880  -->  00:06:19,430
+So hopefully that went well for you.
+
+98
+
+00:06:19,470  -->  00:06:24,090
+This is the way that I'd have done it I'd have just typed dot format because format is again a string
+
+99
+
+00:06:24,120  -->  00:06:30,480
+method and I'm going to put in the first thing user because that's what holds I use an and then I'm
+
+100
+
+00:06:30,480  -->  00:06:31,510
+going to put a comma.
+
+101
+
+00:06:31,530  -->  00:06:37,570
+And after that I'm going to put domain because domain holds our domain name and that should be that
+
+102
+
+00:06:37,570  -->  00:06:38,050
+so.
+
+103
+
+00:06:38,070  -->  00:06:41,440
+Now all we've got to do is print out the output message right.
+
+104
+
+00:06:41,460  -->  00:06:44,290
+So print output.
+
+105
+
+00:06:44,610  -->  00:06:47,740
+Now when I save and run the lesher see how this works.
+
+106
+
+00:06:47,890  -->  00:06:48,880
+Let's.
+
+107
+
+00:06:49,180  -->  00:06:50,830
+Okay so what's your e-mail address.
+
+108
+
+00:06:50,850  -->  00:06:59,290
+Let's say we have super awesome name at galactic mail dot com right.
+
+109
+
+00:06:59,370  -->  00:07:03,210
+This doesn't exist by the way and if it does and you're watching this then you're the unluckiest person
+
+110
+
+00:07:03,210  -->  00:07:04,020
+alive.
+
+111
+
+00:07:04,020  -->  00:07:09,510
+But anyway if I do that it's going to say your username is super awesome name and your domain name is
+
+112
+
+00:07:09,510  -->  00:07:10,930
+galactic mail dot.com.
+
+113
+
+00:07:11,050  -->  00:07:11,790
+Hey.
+
+114
+
+00:07:11,940  -->  00:07:19,350
+So there we are we managed to slice up an email address into it a user name and its domain name using
+
+115
+
+00:07:19,350  -->  00:07:20,640
+Python slices.
+
+116
+
+00:07:20,640  -->  00:07:21,490
+Well done.
+
+117
+
+00:07:21,510  -->  00:07:26,110
+I bet you mean you should probably give yourself a proper pat on the back if you follow through this
+
+118
+
+00:07:26,120  -->  00:07:31,260
+and understand everything and feel now that you have Python strings down pat.
+
+119
+
+00:07:31,260  -->  00:07:33,790
+You have Python strings under your belt and you're a master of them.
+
+120
+
+00:07:33,820  -->  00:07:39,330
+So Welldone know we've covered a lot in this section of the course and as usual I'm just going to have
+
+121
+
+00:07:39,330  -->  00:07:43,830
+a quick recap in the next video of what we've learned to prime you for the next exciting section of
+
+122
+
+00:07:43,830  -->  00:07:45,560
+the course on logic.
+
+123
+
+00:07:45,750  -->  00:07:50,790
+So congratulations once again on following through this project and being able to create an e-mail slicer
+
+124
+
+00:07:50,810  -->  00:07:51,030
+.
+
+125
+
+00:07:51,150  -->  00:07:55,890
+I'll see the next video for a recap and then will move on to learn all about logic so I'll see you in
+
+126
+
+00:07:55,890  -->  00:07:56,770
+the next video.

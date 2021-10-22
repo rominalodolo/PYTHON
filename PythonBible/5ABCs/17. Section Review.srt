@@ -1,0 +1,289 @@
+1
+
+00:00:00,720  -->  00:00:04,510
+Wow we've really covered a lot in this section and a python Bible on strings.
+
+2
+
+00:00:04,710  -->  00:00:08,730
+Now in this lecture I just want to make a quick review of what we've covered and also give you a little
+
+3
+
+00:00:08,730  -->  00:00:11,220
+taster of what's coming up in the next section.
+
+4
+
+00:00:11,240  -->  00:00:14,640
+So after this lecture you'll be feeling really proud of yourself and what you've learned about strings
+
+5
+
+00:00:14,880  -->  00:00:19,110
+and hopefully you'll be rather excited for the next section of the Gores on logic which is where all
+
+6
+
+00:00:19,110  -->  00:00:20,720
+the really cool stuff happens.
+
+7
+
+00:00:20,760  -->  00:00:21,960
+But I won't spoil anything Yeah.
+
+8
+
+00:00:22,110  -->  00:00:23,740
+Let's do our review.
+
+9
+
+00:00:23,790  -->  00:00:27,130
+We started off by looking at what strings are and how we can make them.
+
+10
+
+00:00:27,150  -->  00:00:31,930
+We saw that there are three main ways single quotes double quotes and triple quotes.
+
+11
+
+00:00:31,950  -->  00:00:36,480
+Now Python gives us this many ways because it gives us plenty of flexibility when making strings and
+
+12
+
+00:00:36,480  -->  00:00:38,100
+also stops our strings from breaking.
+
+13
+
+00:00:38,090  -->  00:00:40,120
+When we use certain punctuation.
+
+14
+
+00:00:40,530  -->  00:00:42,640
+Next you learned how to be a string mechanic.
+
+15
+
+00:00:42,810  -->  00:00:47,970
+By learning how to fix strings if they do get broken and after that you created the legendary hello
+
+16
+
+00:00:47,970  -->  00:00:52,040
+world program which entered you into the official realm of Python programmers.
+
+17
+
+00:00:52,110  -->  00:00:53,060
+Congratulations.
+
+18
+
+00:00:53,070  -->  00:00:54,860
+Welcome to the club.
+
+19
+
+00:00:54,990  -->  00:00:59,340
+After that you then sailed through a couple of coding challenges which checked your understanding and
+
+20
+
+00:00:59,340  -->  00:01:03,350
+you were then met with a second project of the course the helo you program.
+
+21
+
+00:01:03,360  -->  00:01:07,710
+We started off by showing you how to use Python's comments to structure your code and keep your mind
+
+22
+
+00:01:07,740  -->  00:01:10,060
+organized and focused on the task at hand.
+
+23
+
+00:01:10,410  -->  00:01:14,820
+Next you learned how to take a user's input and store it in variables to be use later in your program
+
+24
+
+00:01:15,180  -->  00:01:20,190
+and you then learn how to process these variables and create useful output messages using string concatenation
+
+25
+
+00:01:20,340  -->  00:01:22,160
+and string formatting.
+
+26
+
+00:01:22,170  -->  00:01:27,480
+You also learned how some data types are incompatible I can't simply be concatenated together like strings
+
+27
+
+00:01:27,480  -->  00:01:28,420
+and numbers.
+
+28
+
+00:01:28,590  -->  00:01:30,290
+You don't have to resolve problems with data.
+
+29
+
+00:01:30,290  -->  00:01:31,700
+Think about Habibti like this.
+
+30
+
+00:01:31,760  -->  00:01:35,940
+But learning how to convert or cast from one data type to another.
+
+31
+
+00:01:36,390  -->  00:01:41,130
+After that you sailed through another two coding challenges and then you learned all about string methods
+
+32
+
+00:01:41,260  -->  00:01:41,650
+.
+
+33
+
+00:01:41,880  -->  00:01:44,870
+First you learn what string methods are and how to use them.
+
+34
+
+00:01:44,880  -->  00:01:50,520
+Then we went through many useful functions that can do many useful things like finding the index of
+
+35
+
+00:01:50,520  -->  00:01:55,650
+a certain string inside another turning our string into upper case or count the amount of time a certain
+
+36
+
+00:01:55,650  -->  00:01:58,100
+piece of text appears and so on.
+
+37
+
+00:01:58,140  -->  00:02:02,700
+We also learn how to check whether a string was in the correct format with a few string methods as well
+
+38
+
+00:02:02,700  -->  00:02:04,150
+.
+
+39
+
+00:02:04,170  -->  00:02:06,240
+After that you learned all about slices.
+
+40
+
+00:02:06,300  -->  00:02:11,940
+You learn what they are how to use them and also a few shortcuts that makes using slices a dream.
+
+41
+
+00:02:11,940  -->  00:02:15,990
+You then had a quick quiz followed by a coding challenge to check your understanding and then we jumped
+
+42
+
+00:02:15,990  -->  00:02:19,950
+into a third project of the course that e-mails slicer in that project.
+
+43
+
+00:02:19,950  -->  00:02:24,680
+We combine all that we've learned so far to collect user input and store it in a string variable.
+
+44
+
+00:02:24,690  -->  00:02:29,040
+You then slice that variable into smaller pieces to get the user name and domain name from the email
+
+45
+
+00:02:29,040  -->  00:02:34,230
+address and finally use string formatting to create an output message for the user using the data that
+
+46
+
+00:02:34,230  -->  00:02:36,390
+they previously had provided you.
+
+47
+
+00:02:36,480  -->  00:02:41,180
+Well done well done well done to see you've done AMAZING.
+
+48
+
+00:02:41,280  -->  00:02:46,200
+So as you can see we've covered an incredible amount of stuff in this section and you should be feeling
+
+49
+
+00:02:46,200  -->  00:02:50,530
+super confident whenever you have to deal with text in Python now or in the future.
+
+50
+
+00:02:50,550  -->  00:02:51,520
+So well done.
+
+51
+
+00:02:51,810  -->  00:02:55,140
+The next section of course is one of my favorites at the moment.
+
+52
+
+00:02:55,140  -->  00:03:00,150
+Our programs are quite simple and they can only account for one possible route of action.
+
+53
+
+00:03:00,150  -->  00:03:05,490
+However life isn't like that and there are usually many possible routes that a user might take to deal
+
+54
+
+00:03:05,490  -->  00:03:07,770
+with all of these opportunities and possibilities.
+
+55
+
+00:03:07,770  -->  00:03:12,060
+We need a logic in the next section you're going to be learning all about logic in Python.
+
+56
+
+00:03:12,180  -->  00:03:16,270
+So the program can respond whichever the way the user chooses to go.
+
+57
+
+00:03:16,350  -->  00:03:20,730
+As you can see our Python programs are going to get a whole lot more bad ass so let's jump in and I'll
+
+58
+
+00:03:20,730  -->  00:03:21,900
+see you in the next video.
