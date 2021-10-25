@@ -1,7 +1,7 @@
 X = []
 Y = []
 
-with open('values.txt','r') as myfile:
+with open('PythonMatplotlib/Introduction/values.txt','r') as myfile:
     for line in myfile:
         Y.append( int(line) )
 
