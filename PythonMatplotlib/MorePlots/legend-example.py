@@ -8,7 +8,7 @@ plt.plot(x1, y1, 'mo-', label='students')
 plt.plot(x1, y2, 'y^-', label='teachers')
 
 plt.subplots_adjust(left=0.3, bottom=0.3)
-plt.legend(bbox_to_anchor=(-0.15, 0.17), loc='best')
+plt.legend(bbox_to_anchor=(-0.15, 1.03), loc='upper right')
 
 plt.title('School Attendance during Covid')
 plt.xlabel('Days')
