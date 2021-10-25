@@ -12,7 +12,7 @@ x2 = np.random.rand(10)
 y2 = np.random.rand(10)
 z2 = np.random.rand(10)
 
-ax.scatter(x1,y1,z1,s=20, color='red', marker='^')
-ax.scatter(x2,y2,z2,s=20, color='blue', marker='o')
+ax.scatter(x1,y1,z1,s=20, color='pink', marker='^')
+ax.scatter(x2,y2,z2,s=20, color='yellow', marker='o')
 
 plt.show()

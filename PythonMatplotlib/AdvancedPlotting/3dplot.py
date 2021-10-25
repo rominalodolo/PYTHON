@@ -7,6 +7,6 @@ ax = fig.add_subplot(111, projection='3d')
 x1 = np.random.rand(100)
 y1 = np.random.rand(100)
 z1 = np.random.rand(100)
-ax.scatter(x1,y1,z1,s=20, color='red')
+ax.scatter(x1,y1,z1,s=20, color='pink')
 
 plt.show()
