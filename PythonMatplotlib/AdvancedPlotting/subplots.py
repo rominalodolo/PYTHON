@@ -13,17 +13,17 @@ plt.xlabel('x1')
 plt.ylabel('y1')
 
 plt.subplot(2,2,2)
-plt.plot(x,y, color='red')
+plt.plot(x,y, color='yellow')
 plt.xlabel('x2')
 plt.ylabel('y2')
 
 plt.subplot(2,2,3)
-plt.plot(x,y, color='red')
+plt.plot(x,y, color='#FD34BB')
 plt.xlabel('x2')
 plt.ylabel('y2')
 
 plt.subplot(2,2,4)
-plt.plot(x,y, color='red')
+plt.plot(x,y, color='#FFC8ED')
 plt.xlabel('x2')
 plt.ylabel('y2')
 
