@@ -1,5 +1,5 @@
 # PYTHON
- All python projects from Free code camp, Udemy and more. 
+ All python projects from Free Code Camp, Udemy and more. 
 
 
 # README EXAMPLE: 
