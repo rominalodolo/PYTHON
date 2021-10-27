@@ -32,15 +32,15 @@ for duck in range(20):
 
 while True:
 	for event in pygame.event.get():
-		if event.type == pygame.QUIT:
-			pygame.quit()
-			sys.exit()
-		if event.type == pygame.MOUSEMOTION:
-			crosshair_rect = crosshair.get_rect(center = event.pos)
-		if event.type == pygame.MOUSEBUTTONDOWN:
-			for index,duck_rect in enumerate(duck_list):
-				if duck_rect.collidepoint(event.pos):
-					del duck_list[index]
+			if event.type == pygame.QUIT:
+				pygame.quit()
+				sys.exit()
+			if event.type == pygame.MOUSEMOTION:
+				crosshair_rect = crosshair.get_rect(center = event.pos)
+			if event.type == pygame.MOUSEBUTTONDOWN:
+				for index,duck_rect in enumerate(duck_list):
+					if duck_rect.collidepoint(event.pos):
+						del duck_list[index]
 
 
 	screen.blit(wood_bg,(0,0))
@@ -53,12 +53,12 @@ while True:
 
 	land_position_y -= land_speed
 
-	if land_position_y <= 520 or land_position_y >= 600:
+	if land_position_y <= 510 or land_position_y >= 600:
 		land_speed *= -1  
 	screen.blit(land_bg,(0,land_position_y))
 
 	water_position_y += water_speed
-	if water_position_y <= 620 or water_position_y >= 680:
+	if water_position_y <= 630 or water_position_y >= 680:
 		water_speed *= -1
 	screen.blit(water_bg,(0,water_position_y))
 
