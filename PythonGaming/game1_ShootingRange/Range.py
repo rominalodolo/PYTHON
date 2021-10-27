@@ -3,6 +3,7 @@ import pygame, sys, random
 pygame.init()
 screen = pygame.display.set_mode((1280,720))
 clock = pygame.time.Clock()
+pygame.mouse.set_visible(False)
 
 wood_bg = pygame.image.load('PythonGaming/game1_ShootingRange/shootingRangeAssets/Wood_BG.png')
 land_bg = pygame.image.load('PythonGaming/game1_ShootingRange/shootingRangeAssets/Land_BG.png')
@@ -12,11 +13,15 @@ cloud2 = pygame.image.load('PythonGaming/game1_ShootingRange/shootingRangeAssets
 crosshair = pygame.image.load('PythonGaming/game1_ShootingRange/shootingRangeAssets/crosshair.png')
 duck_surface = pygame.image.load('PythonGaming/game1_ShootingRange/shootingRangeAssets/duck.png')
 
+game_font = pygame.font.Font(None,60)
+text_surface = game_font.render('You Won!',True,(255,255,255))
+text_rect = text_surface.get_rect(center = (640,360))
+
 land_position_y = 560
 land_speed = 1
 
 water_position_y = 640
-water_speed = 1.5
+water_speed = 1.6
 
 duck_list = []
 for duck in range(20):
@@ -25,7 +30,6 @@ for duck in range(20):
 	duck_rect = duck_surface.get_rect(center = (duck_position_x, duck_position_y))
 	duck_list.append(duck_rect)
 
-
 while True:
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
@@ -33,7 +37,10 @@ while True:
 			sys.exit()
 		if event.type == pygame.MOUSEMOTION:
 			crosshair_rect = crosshair.get_rect(center = event.pos)
-
+		if event.type == pygame.MOUSEBUTTONDOWN:
+			for index,duck_rect in enumerate(duck_list):
+				if duck_rect.collidepoint(event.pos):
+					del duck_list[index]
 
 
 	screen.blit(wood_bg,(0,0))
@@ -41,21 +48,19 @@ while True:
 	for duck_rect in duck_list:
 		screen.blit(duck_surface,duck_rect)
 
+	if len(duck_list) <= 0:
+		screen.blit(text_surface,text_rect)
+
 	land_position_y -= land_speed
 
 	if land_position_y <= 520 or land_position_y >= 600:
-		land_speed *= -1
+		land_speed *= -1  
 	screen.blit(land_bg,(0,land_position_y))
 
 	water_position_y += water_speed
 	if water_position_y <= 620 or water_position_y >= 680:
 		water_speed *= -1
 	screen.blit(water_bg,(0,water_position_y))
-
-
-
-	screen.blit(land_bg,(0,560))
-	screen.blit(water_bg,(0,640))
 
 	screen.blit(crosshair,crosshair_rect)
 	screen.blit(cloud1,(100,50))
