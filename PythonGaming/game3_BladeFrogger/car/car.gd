@@ -11,6 +11,7 @@ func _ready():
 	
 	if position.x < 0: 
 		direction = -1 
+		$"AnimatedSprite".flip_h = true 
 	else: 
 		direction = 1
 
