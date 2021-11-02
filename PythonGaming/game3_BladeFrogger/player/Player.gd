@@ -21,7 +21,6 @@ func player_animation(velocity):
 		$"AnimatedSprite".play('walk_down')
 	elif velocity.y < 0:
 		$"AnimatedSprite".play('walk_up')
-	
 	elif velocity.x != 0:
 		$"AnimatedSprite".play('walk_side')
 		$"AnimatedSprite".flip_h = velocity.x > 0
