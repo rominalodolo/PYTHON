@@ -7,4 +7,4 @@ func _process(delta):
 
 
 func _on_car_body_entered(body):
-	print('collision')
+	get_tree().change_scene("res://GameScreen/GameScreen.tscn")
