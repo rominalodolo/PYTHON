@@ -4,3 +4,7 @@ var car_speed = 250
 
 func _process(delta):
 	position.x -= car_speed * delta
+
+
+func _on_car_body_entered(body):
+	print('collision')
