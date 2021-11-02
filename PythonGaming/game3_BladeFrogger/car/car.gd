@@ -1,13 +1,14 @@
 extends Area2D
 
 const CAR_LIST = ['Grey1','Grey2','Yellow1','Yellow2']
-var car_speed = 250 
+var car_speed = 250
 var direction = 1 
 
 func _ready():
 	randomize()
 	var current_car = CAR_LIST[randi() % CAR_LIST.size()]
 	$"AnimatedSprite".play(current_car)
+	car_speed = rand_range(210,280)
 	
 	if position.x < 0: 
 		direction = -1 
