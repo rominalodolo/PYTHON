@@ -50,6 +50,9 @@ autostart = true
 wait_time = 2.0
 autostart = true
 
+[node name="PlayerStartPos" type="Position2D" parent="."]
+position = Vector2( 764.653, 527.871 )
+
 [connection signal="timeout" from="CarTimers/Timer1" to="." method="_on_Timer1_timeout"]
 [connection signal="timeout" from="CarTimers/Timer2" to="." method="_on_Timer2_timeout"]
 [connection signal="timeout" from="CarTimers/Timer3" to="." method="_on_Timer3_timeout"]
