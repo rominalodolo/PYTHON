@@ -4,7 +4,6 @@ const CAR = preload("res://car/car.tscn")
 
 func _ready():
 	$YSort/Player.position = $PlayerStartPos.position
-	$"CanvasLayer/Label".text = 'Score: ' + str(Global.score)
 
 func car_spawn(start_pos):	
 	var car = CAR.instance()
@@ -17,8 +16,9 @@ func car_spawn(start_pos):
 
 func _process(delta):
 	if $"YSort/Player".position.y <= 260:
-		$"CanvasLayer/Label".text = 'Success
+		$"YSort/Player".position = $"PlayerStartPos".position 
 		Global.score += 1 
+	$"CanvasLayer/Label".text = 'Score: ' + str(Global.score)
 
 func _on_Timer1_timeout(): car_spawn(1)
 func _on_Timer2_timeout(): car_spawn(2)
