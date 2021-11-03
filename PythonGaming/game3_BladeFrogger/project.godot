@@ -14,6 +14,10 @@ config/name="BladeFrogger"
 run/main_scene="res://Level/Level.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://GLOBAL.tscn"
+
 [importer_defaults]
 
 texture={
