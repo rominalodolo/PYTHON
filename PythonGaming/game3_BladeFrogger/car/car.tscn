@@ -34,6 +34,7 @@ extents = Vector2( 83.8371, 27.0416 )
 
 [node name="car" type="Area2D"]
 position = Vector2( 1123.18, 340.397 )
+collision_layer = 2
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
