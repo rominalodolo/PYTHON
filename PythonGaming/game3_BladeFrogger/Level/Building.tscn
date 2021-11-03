@@ -6,6 +6,9 @@
 extents = Vector2( 48.7571, 61.0093 )
 
 [node name="Building" type="StaticBody2D"]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -13,4 +16,5 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 96.5653, 191.837 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 1 )
