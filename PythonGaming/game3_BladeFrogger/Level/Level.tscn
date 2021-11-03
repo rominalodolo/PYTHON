@@ -133,19 +133,19 @@ tile_data = PoolIntArray( -1048571, 0, 65537, -1048570, 0, 65537, -1048569, 0, 6
 [node name="StartPositions" type="Node" parent="."]
 
 [node name="CarStart1" type="Position2D" parent="StartPositions"]
-position = Vector2( 1684.79, 335.868 )
+position = Vector2( 1968.87, 345.091 )
 
 [node name="CarStart2" type="Position2D" parent="StartPositions"]
-position = Vector2( -91.6644, 414.606 )
+position = Vector2( -768.662, 433.053 )
 
 [node name="CarStart3" type="Position2D" parent="StartPositions"]
-position = Vector2( 1550.42, 577.754 )
+position = Vector2( 1878.78, 577.754 )
 
 [node name="CarStart4" type="Position2D" parent="StartPositions"]
-position = Vector2( 1391.68, 733.044 )
+position = Vector2( 1954.31, 731.199 )
 
 [node name="CarStart5" type="Position2D" parent="StartPositions"]
-position = Vector2( -309.992, 661.845 )
+position = Vector2( -769.317, 678.447 )
 
 [node name="CarTimers" type="Node" parent="."]
 
