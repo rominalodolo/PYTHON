@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://BladeFroggerAssets/Level/Sidewalk_dark.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Level/Building.tscn" type="PackedScene" id=7]
 [ext_resource path="res://BladeFroggerAssets/Level/Logos.png" type="Texture" id=8]
 [ext_resource path="res://BladeFroggerAssets/Font/BLADRMF_.TTF" type="DynamicFontData" id=9]
+[ext_resource path="res://BladeFroggerAssets/Audio/win.ogg" type="AudioStream" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Sidewalk_dark.png 0"
@@ -291,6 +292,9 @@ text = "Test Score"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="WinSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
 
 [connection signal="timeout" from="CarTimers/Timer1" to="." method="_on_Timer1_timeout"]
 [connection signal="timeout" from="CarTimers/Timer2" to="." method="_on_Timer2_timeout"]

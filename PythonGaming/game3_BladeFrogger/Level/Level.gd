@@ -18,6 +18,7 @@ func _process(delta):
 	if $"YSort/Player".position.y <= 260:
 		$"YSort/Player".position = $"PlayerStartPos".position 
 		Global.score += 1 
+		$"WinSound".play()
 	$"CanvasLayer/Label".text = 'Score: ' + str(Global.score)
 
 func _on_Timer1_timeout(): car_spawn(1)
