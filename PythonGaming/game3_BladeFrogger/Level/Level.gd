@@ -3,7 +3,7 @@ extends Node
 const CAR = preload("res://car/car.tscn")
 
 func _ready():
-	$Player.position = $PlayerStartPos.position
+	$YSort/Player.position = $PlayerStartPos.position
 
 func car_spawn(start_pos):	
 	var car = CAR.instance()
