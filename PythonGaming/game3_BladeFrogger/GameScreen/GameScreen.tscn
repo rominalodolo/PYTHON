@@ -13,3 +13,6 @@ margin_top = 177.0
 margin_right = 440.0
 margin_bottom = 191.0
 text = "Test Score"
+__meta__ = {
+"_edit_use_anchors_": false
+}
