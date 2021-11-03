@@ -6,10 +6,7 @@
 [ext_resource path="res://BladeFroggerAssets/Car/Grey1.png" type="Texture" id=4]
 [ext_resource path="res://BladeFroggerAssets/Car/Grey2.png" type="Texture" id=5]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 83.8371, 43.8511 )
-
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
@@ -32,19 +29,23 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 83.8371, 27.0416 )
+
 [node name="car" type="Area2D"]
-position = Vector2( 1122.9, 339.544 )
+position = Vector2( 1123.18, 340.397 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-z_as_relative = false
-shape = SubResource( 1 )
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 2 )
+frames = SubResource( 1 )
 animation = "Yellow2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.28418, 4.83237 )
+z_as_relative = false
+shape = SubResource( 2 )
 
 [connection signal="body_entered" from="." to="." method="_on_car_body_entered"]
