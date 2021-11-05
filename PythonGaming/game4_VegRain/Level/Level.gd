@@ -21,3 +21,4 @@ func _on_Timer4_timeout(): spawn_vegetable(4,-950,1100,50)
 
 
 func _on_Timer5_timeout(): spawn_vegetable(5,950,1100,850)
+
