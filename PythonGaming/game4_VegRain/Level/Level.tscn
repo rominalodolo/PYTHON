@@ -24,7 +24,7 @@ script = ExtResource( 8 )
 [node name="Trees" type="Spatial" parent="."]
 
 [node name="Tree1" parent="Trees" instance=ExtResource( 6 )]
-transform = Transform( 1, 0, 0, 0, 0.996483, 0.0837996, 0, -0.0837996, 0.996483, -3.21732, -0.124045, -1.23186 )
+transform = Transform( 1, 0, 0, 0, 0.996483, 0.0837996, 0, -0.0837996, 0.996483, -4.17031, 0.182406, -1.31386 )
 
 [node name="Tree9" parent="Trees" instance=ExtResource( 6 )]
 transform = Transform( 0.740582, -0.0766513, 0.66758, 0, 0.993473, 0.11407, -0.671966, -0.0844783, 0.735748, -2.47559, -0.124045, 3.20567 )
@@ -42,13 +42,13 @@ transform = Transform( 0.898273, 0, 0.439438, 0, 1, 0, -0.439438, 0, 0.898273, 0
 transform = Transform( 0.898273, 0, 0.439438, 0, 1, 0, -0.439438, 0, 0.898273, -4.24043, 0.1, -4.18604 )
 
 [node name="Tree4" parent="Trees" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3.16943 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6015, 0, -3.16943 )
 
 [node name="Tree5" parent="Trees" instance=ExtResource( 5 )]
 transform = Transform( 0.98023, 0, -0.197863, -0.0175063, 0.996078, -0.0867279, 0.197087, 0.0884771, 0.976385, 3, 0, 2.72956 )
 
 [node name="Tree8" parent="Trees" instance=ExtResource( 5 )]
-transform = Transform( 0.941029, -0.0128975, -0.338079, -0.0175063, 0.996078, -0.0867279, 0.337872, 0.087532, 0.937113, -0.0931454, 0, 4.32454 )
+transform = Transform( 0.941029, -0.0128975, -0.338079, -0.0175063, 0.996078, -0.0867279, 0.337872, 0.087532, 0.937113, 0.250712, 0, 4.61324 )
 
 [node name="GrassStones" type="Spatial" parent="."]
 
@@ -2648,7 +2648,7 @@ transform = Transform( -0.519981, 0, -0.854178, 0, 1, 0, 0.854178, 0, -0.519981,
 transform = Transform( -0.327086, 0, 0.944995, -0.210102, 0.974971, -0.0727215, -0.921342, -0.222331, -0.318899, -4.06744, -0.257491, 4.22358 )
 
 [node name="rock_largeE" parent="GrassStones" instance=ExtResource( 10 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14687, -0.0991793, -4.54134 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51456, -0.0991793, -4.54134 )
 
 [node name="rock_largeE7" parent="GrassStones" instance=ExtResource( 10 )]
 transform = Transform( -0.110983, 0, 0.993822, 0, 1, 0, -0.993822, 0, -0.110983, -1.91082, -0.0991793, -4.54134 )
@@ -2723,7 +2723,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.24082, -0.0603006, 2.7634 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.01754, 0.031, 0.361329 )
 
 [node name="rock_largeA5" parent="GrassStones" instance=ExtResource( 11 )]
-transform = Transform( 0.0968186, 0, 0.995302, 0, 1, 0, -0.995302, 0, 0.0968186, 2.04669, 0.031, 4.30219 )
+transform = Transform( 0.0968186, 0, 0.995302, 0, 1, 0, -0.995302, 0, 0.0968186, -0.529643, -0.0231371, 4.34639 )
 
 [node name="rock_largeA2" parent="GrassStones" instance=ExtResource( 11 )]
 transform = Transform( 0.861983, 0, -0.506937, 0, 1, 0, 0.506937, 0, 0.861983, -4.70612, 0.031, 0.367 )
