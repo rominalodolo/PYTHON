@@ -2741,40 +2741,40 @@ transform = Transform( 1.0371, 0.00582537, 1.71008, -0.362817, 1.95521, 0.213374
 
 [node name="Level" type="Spatial" parent="."]
 
-[node name="Wall" type="CSGBox" parent="Level"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.05659 )
-visible = false
-use_collision = true
-width = 10.6473
-depth = 0.234934
-
-[node name="Wall2" type="CSGBox" parent="Level"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.01484 )
-visible = false
-use_collision = true
-width = 10.6473
-depth = 0.234934
-
-[node name="Wall3" type="CSGBox" parent="Level"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.93395, 0, -0.00528336 )
-visible = false
-use_collision = true
-width = 10.6473
-depth = 0.234934
-
-[node name="Wall4" type="CSGBox" parent="Level"]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.66691, 0, -0.00528336 )
-visible = false
-use_collision = true
-width = 10.6473
-depth = 0.234934
-
 [node name="Platform" type="CSGBox" parent="Level"]
 use_collision = true
 width = 10.0
 height = 0.1
 depth = 10.0
 material = SubResource( 1 )
+
+[node name="Wall" type="CSGBox" parent="Level/Platform"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.05659 )
+visible = false
+use_collision = true
+width = 10.6473
+depth = 0.234934
+
+[node name="Wall2" type="CSGBox" parent="Level/Platform"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.01484 )
+visible = false
+use_collision = true
+width = 10.6473
+depth = 0.234934
+
+[node name="Wall3" type="CSGBox" parent="Level/Platform"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.93395, 0, -0.00528336 )
+visible = false
+use_collision = true
+width = 10.6473
+depth = 0.234934
+
+[node name="Wall4" type="CSGBox" parent="Level/Platform"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.66691, 0, -0.00528336 )
+visible = false
+use_collision = true
+width = 10.6473
+depth = 0.234934
 
 [node name="Timers" type="Node" parent="."]
 
