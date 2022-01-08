@@ -38,7 +38,7 @@ while True:
 			if event.type == pygame.MOUSEMOTION:
 				crosshair_rect = crosshair.get_rect(center = event.pos)
 			if event.type == pygame.MOUSEBUTTONDOWN:
-				for index,duck_rect in enumerate(duck_list):
+				for index, duck_rect in enumerate(duck_list):
 					if duck_rect.collidepoint(event.pos):
 						del duck_list[index]
 
