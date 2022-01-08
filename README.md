@@ -32,7 +32,7 @@ foobar.singularize('phenomena')
 ```
 
 ## Screen Shots 
-``` Pygame: 
+Pygame: 
 # Love Range ![pygame_shootingrange](https://user-images.githubusercontent.com/83961643/148643904-959df981-5c3f-4000-8944-ddbc490f8f01.jpg)
 
 
@@ -42,7 +42,7 @@ Godot:
 # Blade frogger
 
 # Veg Rain
-```
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
