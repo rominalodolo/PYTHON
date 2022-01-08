@@ -5,7 +5,7 @@ screen = pygame.display.set_mode((1280,720))
 clock = pygame.time.Clock()
 pygame.mouse.set_visible(False)
 
-wood_bg = pygame.image.load('PythonGaming/game1_LoveRange/shootingRangeAssets/Wood_BG.png')
+wood_bg = pygame.image.load('shootingRangeAssets/Wood_BG.png')
 land_bg = pygame.image.load('PythonGaming/game1_LoveRange/shootingRangeAssets/Land_BG.png')
 water_bg = pygame.image.load('PythonGaming/game1_LoveRange/shootingRangeAssets/Water_BG.png')
 cloud1 = pygame.image.load('PythonGaming/game1_LoveRange/shootingRangeAssets/Cloud1.png')
