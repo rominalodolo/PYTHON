@@ -86,7 +86,7 @@ clock = pygame.time.Clock() # Create clock object
 game_font = pygame.font.Font(None,40)
 score = 0
 
-spaceship = SpaceShip('/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/shaceship.png',640,500)
+spaceship = SpaceShip('/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/spaceship.png',640,500)
 spaceship_group = pygame.sprite.GroupSingle()
 spaceship_group.add(spaceship)
 
