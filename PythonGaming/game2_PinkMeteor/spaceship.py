@@ -5,7 +5,7 @@ class SpaceShip(pygame.sprite.Sprite):
 		super().__init__()
 		self.image = pygame.image.load(path)
 		self.rect = self.image.get_rect(center = (x_pos,y_pos))
-		self.shield_surface = pygame.image.load('PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/shield.png')
+		self.shield_surface = pygame.image.load('/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/shield.png')
 		self.health = 5
 
 	def update(self):
@@ -86,7 +86,7 @@ clock = pygame.time.Clock() # Create clock object
 game_font = pygame.font.Font(None,40)
 score = 0
 
-spaceship = SpaceShip('PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/spaceship.png',640,500)
+spaceship = SpaceShip('/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/shaceship.png',640,500)
 spaceship_group = pygame.sprite.GroupSingle()
 spaceship_group.add(spaceship)
 
