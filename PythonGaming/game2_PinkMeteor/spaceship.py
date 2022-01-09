@@ -103,7 +103,7 @@ while True: # Game loop
 			sys.exit()
 
 		if event.type == pygame.MOUSEBUTTONDOWN:
-			new_laser = Laser('PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Laser.png',event.pos,15)
+			new_laser = Laser('/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Laser.png',event.pos,15)
 			laser_group.add(new_laser)
 
 		if event.type == pygame.MOUSEBUTTONDOWN and spaceship_group.sprite.health <= 0:
@@ -112,7 +112,7 @@ while True: # Game loop
 			score = 0
 
 		if event.type == METEOR_EVENT:
-			random_meteor_image = random.choice(('PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Meteor1.png','PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Meteor2.png','PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Meteor3.png'))
+			random_meteor_image = random.choice(('/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Meteor1.png','/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Meteor2.png','/Users/rominalodolo/Desktop/GitHub/PYTHON/PythonGaming/game2_PinkMeteor/MeteorDodgerAssets/Meteor3.png'))
 			random_x_pos = random.randrange(0,1280)
 			random_y_pos = random.randrange(-600,-40)
 			random_speed_y = random.randint(3,10)
