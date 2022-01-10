@@ -33,6 +33,7 @@ foobar.singularize('phenomena')
 
 ## Screen Shots 
 *Pygame:*
+installing pygame `python3 -m pip install pygame`
 ### Love Range ![pygame_shootingrange](https://user-images.githubusercontent.com/83961643/148643904-959df981-5c3f-4000-8944-ddbc490f8f01.jpg)
 
 
@@ -42,6 +43,7 @@ foobar.singularize('phenomena')
 
 
 *Godot:*
+installing godot `https://godotengine.org`
 ### Blade frogger
 
 ### Veg Rain
