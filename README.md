@@ -43,7 +43,7 @@ installing pygame `python3 -m pip install pygame`
 
 
 *Godot:*
-installing godot `https://godotengine.org`
+installing godot `![GodotEngine](https://godotengine.org)`
 ### Blade frogger
 
 ### Veg Rain
